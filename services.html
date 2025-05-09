@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - Truly Painting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#D4A59A", // rose gold as main color for primary CTAs
+              secondary: "#2A2A2A", // deep charcoal/off-black as secondary color
+              tertiary: "#1E3A8A", // deep blue for tertiary elements
+              dark: "#1A1A1A", // dark color for dark mode sections
+              light: "#F8F8F8", // light color for light sections
+            },
+            fontFamily: {
+              sans: ['"Inter"', "system-ui", "-apple-system", "sans-serif"],
+              serif: ['"Merriweather"', "Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+      }
+
+      /* Custom rose gold gradient for headlines */
+      .rose-gold-gradient {
+        background: linear-gradient(
+          to right,
+          #d4a59a,
+          /* Base rose gold */ #e8c3b9,
+          /* Lighter rose gold */ #c69489,
+          /* Deeper rose gold */ #d4a59a /* Back to base rose gold */
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeIn {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+
+      .hover-grow {
+        transition: transform 0.2s ease;
+      }
+      .hover-grow:hover {
+        transform: scale(1.02);
+      }
+
+      .service-card {
+        transition: all 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+          0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      }
+
+      /* Gallery Styles */
+      .gallery-item {
+        overflow: hidden;
+        position: relative;
+        aspect-ratio: 1 / 1;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.02);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.05);
+      }
+
+      #galleryModal {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+      }
+
+      #galleryModal.active {
+        opacity: 1;
+        pointer-events: auto;
+        display: flex !important;
+      }
+
+      #modalImage {
+        transition: opacity 0.3s ease;
+      }
+
+      .modal-fade {
+        opacity: 0;
+      }
+    </style>
+    <script>
+      !(function (Gleap, t, i) {
+        if (!(Gleap = window.Gleap = window.Gleap || []).invoked) {
+          for (
+            window.GleapActions = [],
+              Gleap.invoked = !0,
+              Gleap.methods = [
+                "identify",
+                "setEnvironment",
+                "setTags",
+                "attachCustomData",
+                "setCustomData",
+                "removeCustomData",
+                "clearCustomData",
+                "registerCustomAction",
+                "trackEvent",
+                "setUseCookies",
+                "log",
+                "preFillForm",
+                "showSurvey",
+                "sendSilentCrashReport",
+                "startFeedbackFlow",
+                "startBot",
+                "setAppBuildNumber",
+                "setAppVersionCode",
+                "setApiUrl",
+                "setFrameUrl",
+                "isOpened",
+                "open",
+                "close",
+                "on",
+                "setLanguage",
+                "setOfflineMode",
+                "startClassicForm",
+                "initialize",
+                "disableConsoleLogOverwrite",
+                "logEvent",
+                "hide",
+                "enableShortcuts",
+                "showFeedbackButton",
+                "destroy",
+                "getIdentity",
+                "isUserIdentified",
+                "clearIdentity",
+                "openConversations",
+                "openConversation",
+                "openHelpCenterCollection",
+                "openHelpCenterArticle",
+                "openHelpCenter",
+                "searchHelpCenter",
+                "openNewsArticle",
+                "openChecklists",
+                "startChecklist",
+                "openNews",
+                "openFeatureRequests",
+                "isLiveMode",
+              ],
+              Gleap.f = function (e) {
+                return function () {
+                  var t = Array.prototype.slice.call(arguments);
+                  window.GleapActions.push({ e: e, a: t });
+                };
+              },
+              t = 0;
+            t < Gleap.methods.length;
+            t++
+          )
+            Gleap[(i = Gleap.methods[t])] = Gleap.f(i);
+          (Gleap.load = function () {
+            var t = document.getElementsByTagName("head")[0],
+              i = document.createElement("script");
+            (i.type = "text/javascript"),
+              (i.async = !0),
+              (i.src = "https://sdk.gleap.io/latest/index.js"),
+              t.appendChild(i);
+          }),
+            Gleap.load(),
+            Gleap.initialize("dOsA398R8EKpg4YfSLqcIU9EcrkTpHsi");
+        }
+      })();
+    </script>
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header
+      id="header"
+      class="fixed w-full z-50 transition-all duration-300 py-4"
+    >
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="index.html">
+              <img
+                src="https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/67aee2ab2ba94e912ea18552.png"
+                alt="Truly Painting Logo"
+                class="h-12 logo-transparent"
+              />
+              <img
+                src="https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/67aee2ab2ba94e912ea18552.png"
+                alt="Truly Painting Logo"
+                class="h-12 logo-solid hidden"
+              />
+            </a>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-8">
+            <nav>
+              <ul class="flex space-x-6">
+                <li>
+                  <a
+                    href="services.html"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="portfolio.html"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="team.html"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Our Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="index.html#contact"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <a
+              href="tel:5094617090"
+              class="flex items-center bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md font-medium transition"
+            >
+              <svg
+                class="w-[18px] h-[18px] mr-2"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              (509) 461-7090
+            </a>
+          </div>
+
+          <button class="md:hidden text-primary" onclick="toggleMobileMenu()">
+            <svg
+              class="w-7 h-7"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-white shadow-lg fixed top-0 left-0 right-0 z-50 mt-16 max-h-[calc(100vh-4rem)] overflow-y-auto"
+      >
+        <nav class="container mx-auto px-4 py-4">
+          <ul class="space-y-4">
+            <li>
+              <a
+                href="services.html"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="portfolio.html"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a
+                href="team.html"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="index.html#contact"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:5094617090"
+                class="flex items-center w-full bg-primary hover:bg-primary/90 text-white px-4 py-3 rounded-md font-medium justify-center transition"
+                onclick="closeMobileMenu()"
+              >
+                <svg
+                  class="w-[18px] h-[18px] mr-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                (509) 461-7090
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      // Header scroll effect
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("header");
+        const navLinks = document.querySelectorAll(".nav-link");
+        const logoTransparent = document.querySelector(".logo-transparent");
+        const logoSolid = document.querySelector(".logo-solid");
+
+        if (window.scrollY > 20) {
+          header.classList.remove("py-4");
+          header.classList.add("bg-white", "shadow-md", "py-2");
+          navLinks.forEach((link) => {
+            link.classList.remove("text-white");
+            link.classList.add("text-gray-800");
+          });
+          logoTransparent.classList.add("hidden");
+          logoSolid.classList.remove("hidden");
+        } else {
+          header.classList.add("py-4");
+          header.classList.remove("bg-white", "shadow-md", "py-2");
+          navLinks.forEach((link) => {
+            link.classList.add("text-white");
+            link.classList.remove("text-gray-800");
+          });
+          logoTransparent.classList.remove("hidden");
+          logoSolid.classList.add("hidden");
+        }
+      });
+
+      // Mobile menu toggle
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        const header = document.getElementById("header");
+
+        // Adjust mobile menu position based on header height
+        const headerHeight = header.offsetHeight;
+        mobileMenu.style.marginTop = headerHeight + "px";
+
+        mobileMenu.classList.toggle("hidden");
+      }
+
+      function closeMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.add("hidden");
+      }
+    </script>
+
+    <!-- Hero Section -->
+    <section class="relative h-[60vh] flex items-center">
+      <div class="absolute inset-0">
+        <img
+          src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f9a0ad363e9275d5c.webp"
+          alt="Beautiful painting project in Washington"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-black/70 to-primary/80"
+        ></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-4xl mx-auto text-center text-white">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">
+            <span class="rose-gold-gradient"
+              >Expert Painting Solutions Tailored to Your Washington Home</span
+            >
+          </h1>
+          <p class="hidden md:block text-xl opacity-90">
+            Professional painting services with quality craftsmanship for
+            interiors and exteriors that withstand Washington's unique climate
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Introduction -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <p class="text-lg text-gray-700 mb-8">
+            At Truly Painting, we offer a comprehensive range of painting
+            services designed to transform your home and protect it against the
+            unique challenges of the Washington environment. From interior
+            painting to exterior finishes and even specialty projects, our
+            skilled team is equipped to handle projects of any complexity with
+            precision and care.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-16 text-primary"
+        >
+          Our Core Services
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <!-- Service 1: Interior Painting -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden service-card"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f096f56e0e2651ec6.webp"
+                alt="Interior Painting"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Interior Painting
+              </h3>
+              <p class="text-gray-600">
+                Transform your living spaces with our premium interior painting
+                services. We meticulously prepare surfaces, use high-quality
+                paints, and apply expert techniques to ensure a flawless finish.
+                From accent walls to complete home interiors, we'll help you
+                select the perfect colors to create your desired atmosphere.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 2: Exterior Painting -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden service-card"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457fb4903bf9edcf3d79.webp"
+                alt="Exterior Painting"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Exterior Painting
+              </h3>
+              <p class="text-gray-600">
+                Protect and beautify your home's exterior with our comprehensive
+                painting services. We use weather-resistant paints specifically
+                formulated for Washington's climate to ensure long-lasting
+                protection against moisture, UV damage, and temperature
+                fluctuations. Our thorough preparation process ensures superior
+                adhesion and durability.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 3: Cabinet Refinishing -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden service-card"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f6c40216f46e42ba9.webp"
+                alt="Cabinet Refinishing"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Cabinet Refinishing & Painting
+              </h3>
+              <p class="text-gray-600">
+                Update your kitchen or bathroom without the cost of replacement.
+                Our cabinet refinishing services can transform worn or outdated
+                cabinets with fresh paint or stain. We carefully remove doors
+                and hardware, clean, sand, prime, and apply multiple coats for a
+                factory-like finish that will completely refresh your space.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 4: Deck & Fence Staining -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden service-card"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457fb4903b5d4acf3d78.webp"
+                alt="Deck Staining"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Deck & Fence Staining
+              </h3>
+              <p class="text-gray-600">
+                Protect your outdoor wooden structures with our professional
+                staining services. We thoroughly clean, repair, and prepare
+                surfaces before applying premium stains that enhance the natural
+                beauty of the wood while providing protection against moisture,
+                UV rays, and mildew. Regular staining extends the life of your
+                deck and fence.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 5: Color Consultation -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden service-card"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f096f560eec651ec7.webp"
+                alt="Color Consultation"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Color Consultation & Design
+              </h3>
+              <p class="text-gray-600">
+                Unsure about color choices? Our professional color consultants
+                can help you select the perfect palette for your home. We
+                consider your existing décor, lighting conditions, architectural
+                style, and personal preferences to create a cohesive color
+                scheme that enhances your space and reflects your personality.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 6: Specialty Finishes -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden service-card"
+          >
+            <div class="h-48 bg-gray-200 overflow-hidden">
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f9a0ad36873275d5b.webp"
+                alt="Specialty Finishes"
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">
+                Specialty Finishes & Techniques
+              </h3>
+              <p class="text-gray-600">
+                Add unique character to your home with our specialty painting
+                services. We offer faux finishes, textured walls, accent
+                features, decorative trim work, and other custom techniques to
+                create distinctive spaces. Our skilled artisans can achieve a
+                variety of effects from subtle elegance to bold statement
+                pieces.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-6 text-primary"
+        >
+          Our Project Gallery
+        </h2>
+        <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-12">
+          Browse through our collection of completed painting projects. Click on
+          any image to view larger and navigate through the gallery.
+        </p>
+
+        <!-- Gallery Grid -->
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          id="galleryGrid"
+        >
+          <!-- Gallery images will be dynamically inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Modal -->
+    <div
+      id="galleryModal"
+      class="fixed inset-0 bg-black/90 z-[100] hidden flex items-center justify-center"
+    >
+      <button
+        id="closeModal"
+        class="absolute top-4 right-4 text-white hover:text-primary transition-colors"
+      >
+        <svg
+          class="w-8 h-8"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <button
+        id="prevImage"
+        class="absolute left-4 md:left-8 text-white hover:text-primary transition-colors"
+      >
+        <svg
+          class="w-10 h-10"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div
+        id="modalImageContainer"
+        class="w-full max-w-5xl px-4 max-h-[80vh] flex items-center justify-center"
+      >
+        <img
+          id="modalImage"
+          src=""
+          alt="Enlarged gallery image"
+          class="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+        />
+      </div>
+
+      <button
+        id="nextImage"
+        class="absolute right-4 md:right-8 text-white hover:text-primary transition-colors"
+      >
+        <svg
+          class="w-10 h-10"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <div
+        id="imageCounter"
+        class="absolute bottom-4 left-0 right-0 text-center text-white text-sm"
+      >
+        <span id="currentImageIndex">1</span> / <span id="totalImages">0</span>
+      </div>
+    </div>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2
+          class="text-3xl md:text-4xl font-bold text-center mb-12 text-primary"
+        >
+          Why Choose Our Services
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <!-- Reason 1 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover-grow">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"
+                ></path>
+                <line x1="16" y1="8" x2="2" y2="22"></line>
+                <line x1="17.5" y1="15" x2="9" y2="15"></line>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Built for Washington
+            </h3>
+            <p class="text-gray-600">
+              Our painting services are designed to withstand Washington's
+              climate, providing you with a durable and lasting investment that
+              protects your home.
+            </p>
+          </div>
+
+          <!-- Reason 2 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover-grow">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Quality Craftsmanship
+            </h3>
+            <p class="text-gray-600">
+              Our skilled painters are "perfectionists" and "artists" who
+              deliver "top-notch quality work" with meticulous attention to
+              detail.
+            </p>
+          </div>
+
+          <!-- Reason 3 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover-grow">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Efficient & Timely
+            </h3>
+            <p class="text-gray-600">
+              We are known for completing projects "impressively quick," often
+              "ahead of schedule," without sacrificing quality.
+            </p>
+          </div>
+
+          <!-- Reason 4 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover-grow">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Clear Communication
+            </h3>
+            <p class="text-gray-600">
+              From start to finish, expect excellent communication,
+              transparency, and a team that listens to your input.
+            </p>
+          </div>
+
+          <!-- Reason 5 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover-grow">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M3 3h18v18H3zM12 8v8m-4-4h8"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">
+              Clean & Respectful
+            </h3>
+            <p class="text-gray-600">
+              Our crews maintain a clean worksite and are respectful of your
+              property throughout the entire project.
+            </p>
+          </div>
+
+          <!-- Reason 6 -->
+          <div class="bg-gray-50 rounded-lg p-6 text-center hover-grow">
+            <div
+              class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                <path d="M12 16v.01"></path>
+                <path d="M8 11h8"></path>
+                <path d="M8 8h8"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">Honest Pricing</h3>
+            <p class="text-gray-600">
+              We provide fair, transparent quotes with no hidden costs or
+              surprise "cost overrides."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6 text-primary">
+            <span class="rose-gold-gradient"
+              >Ready to Transform Your Home with Fresh Paint?</span
+            >
+          </h2>
+          <p class="text-xl text-gray-600 mb-8">
+            Contact us today for a consultation and let's bring your painting
+            vision to life!
+          </p>
+          <a
+            href="index.html#contact"
+            class="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-md font-semibold transition"
+          >
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <img
+              src="https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/67aee2ab2ba94e912ea18552.png"
+              alt="Truly Painting Logo"
+              class="h-14 mb-4"
+            />
+            <p class="text-gray-300 mb-4">
+              Newport's premier painting specialists. No ghosting. No guesswork.
+              Just gorgeous painting results.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-primary hover:text-primary/80 transition">
+                <span class="sr-only">Facebook</span>
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="text-primary hover:text-primary/80 transition">
+                <span class="sr-only">Instagram</span>
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <svg
+                  class="w-[18px] h-[18px] mr-3 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                <a href="tel:5094617090" class="hover:text-primary transition"
+                  >(509) 461-7090</a
+                >
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-[18px] h-[18px] mr-3 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <a
+                  href="mailto:trulypaintings@gmail.com"
+                  class="hover:text-primary transition"
+                  >trulypaintings@gmail.com</a
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-[18px] h-[18px] mr-3 text-primary mt-1"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>141 Elu Beach Rd, Newport, WA 99156</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Hours & Information</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li>Open 7:30am-7:00pm Daily</li>
+              <li>Serving Newport & Surrounding Areas</li>
+              <li>Fully Insured and Bonded</li>
+              <li>Painting Specialists</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 pt-8 mt-8 text-gray-300 text-sm text-center"
+        >
+          <p>
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Truly Painting. All rights reserved.
+          </p>
+          <p class="mt-2">
+            <a href="#" class="hover:text-primary transition">Privacy Policy</a>
+            {' | '}
+            <a href="#" class="hover:text-primary transition"
+              >Terms of Service</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Gallery JavaScript -->
+    <script>
+      // Gallery image data
+      const galleryImages = [
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f9a0ad363e9275d5c.webp",
+          alt: "Interior painting project in Washington",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f6c40216f46e42ba9.webp",
+          alt: "Kitchen cabinet painting project",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457fb4903bf9edcf3d79.webp",
+          alt: "Exterior house painting",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f096f56e0e2651ec6.webp",
+          alt: "Living room painting project",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457fb4903b5d4acf3d78.webp",
+          alt: "Deck staining project",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f096f560eec651ec7.webp",
+          alt: "Color consultation and design",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f9a0ad36873275d5b.webp",
+          alt: "Specialty finish painting",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e44753f78517d97fa72cc.webp",
+          alt: "Bathroom painting project",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e447581dc6065f778fe94.webp",
+          alt: "Accent wall painting",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e44750f2ec76accf4272c.webp",
+          alt: "Fence staining project",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e447579f594dcf6ed6e6d.webp",
+          alt: "Exterior trim painting",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e44759a0ad318ab275bae.webp",
+          alt: "Dining room painting project",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e4475b4903b99c7cf3bfe.webp",
+          alt: "Bedroom painting project",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e44750f2ec70e27f42728.webp",
+          alt: "Garage painting project",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e4475e3bce08e962b4b9c.webp",
+          alt: "Commercial painting project",
+        },
+        {
+          src: "https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e44750f2ec7e29cf4272d.webp",
+          alt: "Textured wall painting",
+        },
+      ];
+
+      // Variables for gallery functionality
+      let currentImageIndex = 0;
+
+      // DOM elements
+      const galleryGrid = document.getElementById("galleryGrid");
+      const galleryModal = document.getElementById("galleryModal");
+      const modalImage = document.getElementById("modalImage");
+      const closeModal = document.getElementById("closeModal");
+      const prevImage = document.getElementById("prevImage");
+      const nextImage = document.getElementById("nextImage");
+      const currentImageIndexEl = document.getElementById("currentImageIndex");
+      const totalImagesEl = document.getElementById("totalImages");
+
+      // Initialize gallery
+      function initGallery() {
+        // Populate gallery grid with images
+        galleryImages.forEach((image, index) => {
+          const galleryItem = document.createElement("div");
+          galleryItem.className =
+            "gallery-item rounded-lg shadow-md overflow-hidden";
+          galleryItem.innerHTML = `
+            <img src="${image.src}" alt="${image.alt}" loading="lazy" />
+          `;
+
+          // Add click event to open modal
+          galleryItem.addEventListener("click", () => openModal(index));
+
+          galleryGrid.appendChild(galleryItem);
+        });
+
+        // Update total images count
+        totalImagesEl.textContent = galleryImages.length;
+
+        // Event listeners for modal controls
+        closeModal.addEventListener("click", closeGalleryModal);
+        prevImage.addEventListener("click", showPreviousImage);
+        nextImage.addEventListener("click", showNextImage);
+
+        // Keyboard navigation
+        document.addEventListener("keydown", handleKeyboardNavigation);
+
+        // Close modal when clicking outside the image
+        galleryModal.addEventListener("click", (e) => {
+          if (e.target === galleryModal) {
+            closeGalleryModal();
+          }
+        });
+      }
+
+      // Open modal with specific image
+      function openModal(index) {
+        currentImageIndex = index;
+        updateModalImage();
+        galleryModal.classList.add("active");
+        document.body.style.overflow = "hidden"; // Prevent scrolling when modal is open
+      }
+
+      // Close modal
+      function closeGalleryModal() {
+        galleryModal.classList.remove("active");
+        document.body.style.overflow = ""; // Restore scrolling
+      }
+
+      // Update modal image and counter
+      function updateModalImage() {
+        // Add fade effect
+        modalImage.classList.add("modal-fade");
+
+        setTimeout(() => {
+          // Get the original src and replace r_320 with r_1080 for higher resolution in modal
+          const highResSrc = galleryImages[currentImageIndex].src.replace(
+            "r_320",
+            "r_1080"
+          );
+          modalImage.src = highResSrc;
+          modalImage.alt = galleryImages[currentImageIndex].alt;
+          currentImageIndexEl.textContent = currentImageIndex + 1;
+
+          // Remove fade effect after image is loaded
+          modalImage.onload = () => {
+            modalImage.classList.remove("modal-fade");
+          };
+        }, 300);
+      }
+
+      // Show previous image
+      function showPreviousImage() {
+        currentImageIndex =
+          (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+        updateModalImage();
+      }
+
+      // Show next image
+      function showNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+        updateModalImage();
+      }
+
+      // Handle keyboard navigation
+      function handleKeyboardNavigation(e) {
+        if (!galleryModal.classList.contains("active")) return;
+
+        switch (e.key) {
+          case "ArrowLeft":
+            showPreviousImage();
+            break;
+          case "ArrowRight":
+            showNextImage();
+            break;
+          case "Escape":
+            closeGalleryModal();
+            break;
+        }
+      }
+
+      // Initialize gallery when DOM is loaded
+      document.addEventListener("DOMContentLoaded", initGallery);
+    </script>
+  </body>
+</html>

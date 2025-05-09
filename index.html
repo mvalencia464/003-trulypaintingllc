@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truly Painting - Professional Painting Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#D4A59A", // rose gold as main color for primary CTAs
+              secondary: "#2A2A2A", // deep charcoal/off-black as secondary color
+              tertiary: "#1E3A8A", // deep blue for tertiary elements
+              dark: "#1A1A1A", // dark color for dark mode sections
+              light: "#F8F8F8", // light color for light sections
+            },
+            fontFamily: {
+              sans: ['"Inter"', "system-ui", "-apple-system", "sans-serif"],
+              serif: ['"Merriweather"', "Georgia", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Inter", system-ui, -apple-system, sans-serif;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeIn {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+
+      .hover-grow {
+        transition: transform 0.2s ease;
+      }
+      .hover-grow:hover {
+        transform: scale(1.02);
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+      }
+
+      /* Custom rose gold gradient for headlines */
+      .rose-gold-gradient {
+        background: linear-gradient(
+          to right,
+          #d4a59a,
+          /* Base rose gold */ #e8c3b9,
+          /* Lighter rose gold */ #c69489,
+          /* Deeper rose gold */ #d4a59a /* Back to base rose gold */
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+    <script>
+      !(function (Gleap, t, i) {
+        if (!(Gleap = window.Gleap = window.Gleap || []).invoked) {
+          for (
+            window.GleapActions = [],
+              Gleap.invoked = !0,
+              Gleap.methods = [
+                "identify",
+                "setEnvironment",
+                "setTags",
+                "attachCustomData",
+                "setCustomData",
+                "removeCustomData",
+                "clearCustomData",
+                "registerCustomAction",
+                "trackEvent",
+                "setUseCookies",
+                "log",
+                "preFillForm",
+                "showSurvey",
+                "sendSilentCrashReport",
+                "startFeedbackFlow",
+                "startBot",
+                "setAppBuildNumber",
+                "setAppVersionCode",
+                "setApiUrl",
+                "setFrameUrl",
+                "isOpened",
+                "open",
+                "close",
+                "on",
+                "setLanguage",
+                "setOfflineMode",
+                "startClassicForm",
+                "initialize",
+                "disableConsoleLogOverwrite",
+                "logEvent",
+                "hide",
+                "enableShortcuts",
+                "showFeedbackButton",
+                "destroy",
+                "getIdentity",
+                "isUserIdentified",
+                "clearIdentity",
+                "openConversations",
+                "openConversation",
+                "openHelpCenterCollection",
+                "openHelpCenterArticle",
+                "openHelpCenter",
+                "searchHelpCenter",
+                "openNewsArticle",
+                "openChecklists",
+                "startChecklist",
+                "openNews",
+                "openFeatureRequests",
+                "isLiveMode",
+              ],
+              Gleap.f = function (e) {
+                return function () {
+                  var t = Array.prototype.slice.call(arguments);
+                  window.GleapActions.push({ e: e, a: t });
+                };
+              },
+              t = 0;
+            t < Gleap.methods.length;
+            t++
+          )
+            Gleap[(i = Gleap.methods[t])] = Gleap.f(i);
+          (Gleap.load = function () {
+            var t = document.getElementsByTagName("head")[0],
+              i = document.createElement("script");
+            (i.type = "text/javascript"),
+              (i.async = !0),
+              (i.src = "https://sdk.gleap.io/latest/index.js"),
+              t.appendChild(i);
+          }),
+            Gleap.load(),
+            Gleap.initialize("dOsA398R8EKpg4YfSLqcIU9EcrkTpHsi");
+        }
+      })();
+    </script>
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header
+      id="header"
+      class="fixed w-full z-50 transition-all duration-300 py-4"
+    >
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="index.html">
+              <img
+                src="https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/67aee2ab2ba94e912ea18552.png"
+                alt="Truly Painting Logo"
+                class="h-12 logo-transparent"
+              />
+              <img
+                src="https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/67aee2ab2ba94e912ea18552.png"
+                alt="Truly Painting Logo"
+                class="h-12 logo-solid hidden"
+              />
+            </a>
+          </div>
+
+          <div class="hidden md:flex items-center space-x-8">
+            <nav>
+              <ul class="flex space-x-6">
+                <li>
+                  <a
+                    href="services.html"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="portfolio.html"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="team.html"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Our Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="nav-link font-medium hover:text-primary transition text-white"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <a
+              href="tel:5094617090"
+              class="flex items-center bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md font-medium transition"
+            >
+              <svg
+                class="w-[18px] h-[18px] mr-2"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              (509) 461-7090
+            </a>
+          </div>
+
+          <button class="md:hidden text-white" onclick="toggleMobileMenu()">
+            <svg
+              class="w-7 h-7"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobileMenu"
+        class="hidden md:hidden bg-white shadow-lg fixed top-0 left-0 right-0 z-50 mt-16 max-h-[calc(100vh-4rem)] overflow-y-auto"
+      >
+        <nav class="container mx-auto px-4 py-4">
+          <ul class="space-y-4">
+            <li>
+              <a
+                href="services.html"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a
+                href="portfolio.html"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Portfolio
+              </a>
+            </li>
+            <li>
+              <a
+                href="team.html"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="block py-2 text-gray-800 font-medium hover:text-primary"
+                onclick="closeMobileMenu()"
+              >
+                Contact
+              </a>
+            </li>
+            <li>
+              <a
+                href="tel:5094617090"
+                class="flex items-center w-full bg-primary hover:bg-primary/90 text-white px-4 py-3 rounded-md font-medium justify-center transition"
+                onclick="closeMobileMenu()"
+              >
+                <svg
+                  class="w-[18px] h-[18px] mr-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                (509) 461-7090
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <script>
+      // Header scroll effect
+      window.addEventListener("scroll", () => {
+        const header = document.getElementById("header");
+        const navLinks = document.querySelectorAll(".nav-link");
+        const logoTransparent = document.querySelector(".logo-transparent");
+        const logoSolid = document.querySelector(".logo-solid");
+
+        if (window.scrollY > 20) {
+          header.classList.remove("py-4");
+          header.classList.add("bg-white", "shadow-md", "py-2");
+          navLinks.forEach((link) => {
+            link.classList.remove("text-white");
+            link.classList.add("text-gray-800");
+          });
+          logoTransparent.classList.add("hidden");
+          logoSolid.classList.remove("hidden");
+        } else {
+          header.classList.add("py-4");
+          header.classList.remove("bg-white", "shadow-md", "py-2");
+          navLinks.forEach((link) => {
+            link.classList.add("text-white");
+            link.classList.remove("text-gray-800");
+          });
+          logoTransparent.classList.remove("hidden");
+          logoSolid.classList.add("hidden");
+        }
+      });
+
+      // Mobile menu toggle
+      function toggleMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        const header = document.getElementById("header");
+
+        // Adjust mobile menu position based on header height
+        const headerHeight = header.offsetHeight;
+        mobileMenu.style.marginTop = headerHeight + "px";
+
+        mobileMenu.classList.toggle("hidden");
+      }
+
+      function closeMobileMenu() {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.add("hidden");
+      }
+    </script>
+
+    <!-- Hero Section -->
+    <section class="relative h-[75vh] flex items-center">
+      <div class="absolute inset-0">
+        <img
+          src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1500/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f9a0ad363e9275d5c.webp"
+          alt="Beautiful Painting Project by Truly Painting"
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+      </div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="grid md:grid-cols-5 gap-8 items-center">
+          <div class="md:col-span-3 text-white">
+            <h1
+              class="text-4xl md:text-5xl font-bold leading-tight mb-6 animate-fadeIn"
+            >
+              <span class="rose-gold-gradient"
+                >Spokane, See Your Home Transformed</span
+              >
+            </h1>
+            <p class="hidden md:block text-xl mb-8 opacity-90">
+              Don't Just Imagine Your New Paint Job – See It! Try Our Free AI
+              Paint Preview, Then Let Us Bring It to Life with Expert
+              Craftsmanship.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#contact"
+                class="px-8 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-md text-center transition"
+              >
+                Get Your FREE Estimate Today!
+              </a>
+              <a
+                href="tel:5094617090"
+                class="px-8 py-3 bg-white hover:bg-gray-100 text-primary font-semibold rounded-md text-center transition flex items-center justify-center"
+              >
+                <svg
+                  class="w-5 h-5 mr-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                Call Now: (509) 461-7090
+              </a>
+            </div>
+          </div>
+
+          <div class="md:col-span-2">
+            <div class="bg-white rounded-lg shadow-xl p-6 max-w-sm mx-auto">
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                Get Your Free Quote
+              </h3>
+              <form class="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
+                />
+                <input
+                  type="tel"
+                  placeholder="Phone Number"
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
+                />
+                <select
+                  required
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
+                >
+                  <option value="">Select Project Type</option>
+                  <option value="interior">Interior Painting</option>
+                  <option value="exterior">Exterior Painting</option>
+                  <option value="cabinet">Cabinet Refinishing</option>
+                  <option value="commercial">Commercial Painting</option>
+                  <option value="special">Special Finishes</option>
+                </select>
+                <textarea
+                  placeholder="Tell us about your painting project"
+                  rows="3"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
+                ></textarea>
+                <button
+                  type="submit"
+                  class="w-full py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-md transition"
+                >
+                  Request Free Quote
+                </button>
+              </form>
+
+              <div class="mt-4 text-center">
+                <div class="flex items-center justify-center mb-2">
+                  <div class="text-primary">★★★★★</div>
+                  <span class="ml-2 text-gray-700 font-medium"
+                    >4.9/5 (85 Reviews)</span
+                  >
+                </div>
+                <p class="text-sm text-gray-600 italic">
+                  "The AI preview was a game-changer! I could finally see how
+                  that bold color would look." - Sarah M.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem/Solution Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+            <span class="rose-gold-gradient"
+              >The Truly Painting Difference</span
+            >
+          </h2>
+
+          <div class="space-y-6">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-primary/10 rounded-lg p-6">
+                <div class="flex items-center mb-3">
+                  <svg
+                    class="w-6 h-6 text-red-500 mr-2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                  </svg>
+                  <h3 class="text-lg font-semibold text-primary">
+                    Other Painting Companies
+                  </h3>
+                </div>
+                <p class="text-gray-700">
+                  Color uncertainty, difficult to visualize final results
+                </p>
+              </div>
+
+              <div class="bg-primary rounded-lg p-6">
+                <div class="flex items-center mb-3">
+                  <svg
+                    class="w-6 h-6 text-white mr-2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <h3 class="text-lg font-semibold text-white">Our Approach</h3>
+                </div>
+                <p class="text-white">
+                  Free AI preview app lets you see your colors before we start
+                </p>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-primary/10 rounded-lg p-6">
+                <div class="flex items-center mb-3">
+                  <svg
+                    class="w-6 h-6 text-red-500 mr-2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                  </svg>
+                  <h3 class="text-lg font-semibold text-primary">
+                    Other Painting Companies
+                  </h3>
+                </div>
+                <p class="text-gray-700">
+                  Messy work sites, paint splatters everywhere
+                </p>
+              </div>
+
+              <div class="bg-primary rounded-lg p-6">
+                <div class="flex items-center mb-3">
+                  <svg
+                    class="w-6 h-6 text-white mr-2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <h3 class="text-lg font-semibold text-white">Our Approach</h3>
+                </div>
+                <p class="text-white">
+                  Meticulous preparation and thorough clean-up after every
+                  project
+                </p>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-primary/10 rounded-lg p-6">
+                <div class="flex items-center mb-3">
+                  <svg
+                    class="w-6 h-6 text-red-500 mr-2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                  </svg>
+                  <h3 class="text-lg font-semibold text-primary">
+                    Other Painting Companies
+                  </h3>
+                </div>
+                <p class="text-gray-700">Low-quality paints that don't last</p>
+              </div>
+
+              <div class="bg-primary rounded-lg p-6">
+                <div class="flex items-center mb-3">
+                  <svg
+                    class="w-6 h-6 text-white mr-2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <h3 class="text-lg font-semibold text-white">Our Approach</h3>
+                </div>
+                <p class="text-white">
+                  Premium quality paints and materials for lasting beauty
+                </p>
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="bg-primary/10 rounded-lg p-6">
+                <div class="flex items-center mb-3">
+                  <svg
+                    class="w-6 h-6 text-red-500 mr-2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                  </svg>
+                  <h3 class="text-lg font-semibold text-primary">
+                    Other Painting Companies
+                  </h3>
+                </div>
+                <p class="text-gray-700">
+                  Hidden fees, unexpected costs, vague quotes
+                </p>
+              </div>
+
+              <div class="bg-primary rounded-lg p-6">
+                <div class="flex items-center mb-3">
+                  <svg
+                    class="w-6 h-6 text-white mr-2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                  </svg>
+                  <h3 class="text-lg font-semibold text-white">Our Approach</h3>
+                </div>
+                <p class="text-white">
+                  Clear, detailed quotes with no surprise charges
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12 text-center">
+            <p class="text-xl text-primary font-semibold">
+              "The AI preview was amazing - I was able to see exactly how my
+              home would look before they even started!"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-secondary">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            <span class="text-white relative">
+              Professional Painting Services in Newport
+              <span
+                class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-primary rounded-full"
+              ></span>
+            </span>
+          </h2>
+          <p class="text-xl text-gray-200 max-w-3xl mx-auto">
+            We provide exceptional interior and exterior painting services with
+            meticulous attention to detail and premium materials for lasting
+            beauty.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer aspect-[4/3]"
+            >
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style="
+                  background-image: url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_800/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f9a0ad363e9275d5c.webp');
+                "
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              ></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h3 class="text-xl font-bold">Interior Painting</h3>
+                <p class="text-sm text-white">Transform Your Living Spaces</p>
+              </div>
+            </div>
+            <p class="mt-2 text-gray-200 text-sm">
+              Expert interior painting for walls, ceilings, trim, doors, and
+              more with flawless finishes and attention to detail.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer aspect-[4/3]"
+            >
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style="
+                  background-image: url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_800/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f6c40216f46e42ba9.webp');
+                "
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              ></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h3 class="text-xl font-bold">Exterior Painting</h3>
+                <p class="text-sm text-white">Boost Your Curb Appeal</p>
+              </div>
+            </div>
+            <p class="mt-2 text-gray-200 text-sm">
+              Comprehensive exterior painting services for siding, trim, doors,
+              and more with weather-resistant finishes.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer aspect-[4/3]"
+            >
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style="
+                  background-image: url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_800/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457fb4903bf9edcf3d79.webp');
+                "
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              ></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h3 class="text-xl font-bold">Cabinet Refinishing</h3>
+                <p class="text-sm text-white">Kitchen & Bath Transformations</p>
+              </div>
+            </div>
+            <p class="mt-2 text-gray-200 text-sm">
+              Give your kitchen or bathroom a fresh new look with our expert
+              cabinet painting and refinishing services.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer aspect-[4/3]"
+            >
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style="
+                  background-image: url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_800/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f096f56e0e2651ec6.webp');
+                "
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              ></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h3 class="text-xl font-bold">Color Consultation</h3>
+                <p class="text-sm text-white">Expert Color Selection</p>
+              </div>
+            </div>
+            <p class="mt-2 text-gray-200 text-sm">
+              Professional color consultation to help you choose the perfect
+              colors for your home, enhanced by our AI preview app.
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer aspect-[4/3]"
+            >
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style="
+                  background-image: url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_800/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457fb4903b5d4acf3d78.webp');
+                "
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              ></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h3 class="text-xl font-bold">Deck & Fence Staining</h3>
+                <p class="text-sm text-white">Outdoor Surface Protection</p>
+              </div>
+            </div>
+            <p class="mt-2 text-gray-200 text-sm">
+              Protect and beautify your outdoor wooden surfaces with our
+              professional staining and sealing services.
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg cursor-pointer aspect-[4/3]"
+            >
+              <div
+                class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
+                style="
+                  background-image: url('https://images.leadconnectorhq.com/image/f_webp/q_80/r_800/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f096f560eec651ec7.webp');
+                "
+              ></div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              ></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <h3 class="text-xl font-bold">AI Color Preview</h3>
+                <p class="text-sm text-white">See Before We Paint</p>
+              </div>
+            </div>
+            <p class="mt-2 text-gray-200 text-sm">
+              Our exclusive AI app lets you visualize any color on your home
+              before we start painting - eliminating color uncertainty.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a
+            href="#contact"
+            class="inline-flex items-center px-8 py-4 bg-white hover:bg-gray-100 text-primary font-semibold rounded-md transition-colors"
+          >
+            Get Your Free Painting Estimate Today
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Preview App Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+              <span class="rose-gold-gradient"
+                >See Your Home's Future: Try Our AI Paint Preview App!</span
+              >
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              Eliminate color doubt with our innovative AI tool that lets you
+              visualize any paint color on your home before we start painting.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <img
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f9a0ad36873275d5b.webp"
+                alt="AI Paint Preview App Demo"
+                class="rounded-lg shadow-xl w-full"
+              />
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold mb-6">How It Works:</h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div
+                    class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0"
+                  >
+                    1
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-2">Take a Photo</h4>
+                    <p class="text-gray-600">
+                      Snap a photo of your home's interior or exterior that you
+                      want to paint.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0"
+                  >
+                    2
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-2">Choose Colors</h4>
+                    <p class="text-gray-600">
+                      Select from thousands of paint colors or upload your own
+                      custom shade.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0"
+                  >
+                    3
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-2">See the Results</h4>
+                    <p class="text-gray-600">
+                      Our AI instantly generates a realistic preview of how your
+                      space will look with the new color.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0"
+                  >
+                    4
+                  </div>
+                  <div>
+                    <h4 class="text-lg font-semibold mb-2">Share & Compare</h4>
+                    <p class="text-gray-600">
+                      Compare different colors side by side and share with
+                      family and friends to get their opinion.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <a
+                  href="#contact"
+                  class="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-md transition"
+                >
+                  Try Our AI Preview App Today!
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-16 bg-gray-50 rounded-xl p-8 shadow-md">
+            <div class="text-center mb-8">
+              <h3 class="text-2xl font-bold mb-2">Why Our AI Preview App?</h3>
+              <p class="text-gray-600">
+                Take the guesswork out of choosing paint colors and make
+                confident decisions.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-primary mb-4">
+                  <svg
+                    class="w-10 h-10"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-semibold mb-2">
+                  Eliminate Uncertainty
+                </h4>
+                <p class="text-gray-600">
+                  No more guessing how a color will look in your space - see it
+                  before you commit.
+                </p>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-primary mb-4">
+                  <svg
+                    class="w-10 h-10"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                    <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                    <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-semibold mb-2">
+                  Customer Satisfaction
+                </h4>
+                <p class="text-gray-600">
+                  Our clients love knowing exactly what to expect before we
+                  start painting.
+                </p>
+              </div>
+
+              <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="text-primary mb-4">
+                  <svg
+                    class="w-10 h-10"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                    ></path>
+                  </svg>
+                </div>
+                <h4 class="text-lg font-semibold mb-2">Completely Free</h4>
+                <p class="text-gray-600">
+                  Our AI preview app is free to use - just another way we
+                  provide exceptional service.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section id="trust" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            The Painting Company Newport Homeowners Trust
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Our reputation across hundreds of projects speaks for itself. We
+            pride ourselves on reliability, quality, and doing the job right the
+            first time.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <!-- Testimonial 1 -->
+          <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+            <div class="flex mb-4">
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+            </div>
+            <p class="text-gray-700 italic mb-4">
+              "The AI preview app was amazing! I was able to try several colors
+              before deciding. The painters were professional and the results
+              are stunning."
+            </p>
+            <p class="font-semibold flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              Jennifer R.
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+            <div class="flex mb-4">
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+            </div>
+            <p class="text-gray-700 italic mb-4">
+              "Truly Painting transformed our kitchen cabinets. They were
+              meticulous with preparation and cleanup. The finish is flawless!"
+            </p>
+            <p class="font-semibold flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              Michael T.
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+            <div class="flex mb-4">
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+              <svg
+                class="w-5 h-5 text-primary fill-current"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                />
+              </svg>
+            </div>
+            <p class="text-gray-700 italic mb-4">
+              "Joseph and his team were professional, punctual, and did an
+              amazing job on our exterior. The paint quality is excellent and
+              has held up beautifully."
+            </p>
+            <p class="font-semibold flex items-center">
+              <svg
+                class="w-4 h-4 mr-2 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              Lisa K.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-secondary rounded-xl shadow-xl overflow-hidden">
+          <div class="p-8 md:p-12">
+            <div class="max-w-4xl mx-auto text-center text-white">
+              <h3 class="text-2xl md:text-3xl font-bold mb-6">
+                What Sets Us Apart
+              </h3>
+
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-8"
+              >
+                <div class="flex flex-col items-center">
+                  <div
+                    class="bg-white rounded-full w-16 h-16 flex items-center justify-center text-primary mb-4"
+                  >
+                    <svg
+                      class="w-8 h-8"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-lg font-semibold mb-2">Premium Materials</h4>
+                  <p class="text-gray-200">
+                    We use only high-quality paints and materials for lasting
+                    results
+                  </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <div
+                    class="bg-white rounded-full w-16 h-16 flex items-center justify-center text-primary mb-4"
+                  >
+                    <svg
+                      class="w-8 h-8"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-lg font-semibold mb-2">AI Color Preview</h4>
+                  <p class="text-gray-200">
+                    See your colors before we paint with our innovative app
+                  </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <div
+                    class="bg-white rounded-full w-16 h-16 flex items-center justify-center text-primary mb-4"
+                  >
+                    <svg
+                      class="w-8 h-8"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <h4 class="text-lg font-semibold mb-2">
+                    Expert Consultation
+                  </h4>
+                  <p class="text-gray-200">
+                    Professional color and design advice for your project
+                  </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                  <div
+                    class="bg-white rounded-full w-16 h-16 flex items-center justify-center text-primary mb-4"
+                  >
+                    <svg
+                      class="w-8 h-8"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                      ></polygon>
+                    </svg>
+                  </div>
+                  <h4 class="text-lg font-semibold mb-2">Meticulous Prep</h4>
+                  <p class="text-gray-200">
+                    Thorough preparation and clean-up for flawless results
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section class="py-16 bg-secondary text-white">
+      <div class="container mx-auto px-4 md:px-6">
+        <div
+          class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between"
+        >
+          <div class="mb-8 md:mb-0 text-center md:text-left">
+            <div class="flex items-center justify-center md:justify-start mb-4">
+              <svg
+                class="w-8 h-8 mr-3 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <h2 class="text-2xl md:text-3xl font-bold">
+                Ready to Transform Your Home?
+              </h2>
+            </div>
+            <p class="text-xl mb-2">
+              Professional painting services in Newport
+            </p>
+            <p class="text-lg opacity-90">
+              Get expert advice and a free color consultation for your painting
+              project
+            </p>
+          </div>
+
+          <div class="flex-shrink-0">
+            <a
+              href="tel:5094617090"
+              class="flex items-center bg-primary hover:bg-primary/90 text-white px-6 py-4 rounded-lg text-xl font-semibold transition transform hover:scale-105"
+            >
+              <svg
+                class="w-6 h-6 mr-3"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+              </svg>
+              Call: (509) 461-7090
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+              <span class="relative inline-block">
+                <span class="rose-gold-gradient"
+                  >Ready to Transform Your Home with Fresh Paint?</span
+                >
+                <span
+                  class="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-[#D4A59A] to-[#C69489] rounded-full transform scale-x-0 transition-transform duration-500 group-hover:scale-x-100"
+                ></span>
+              </span>
+            </h2>
+            <p class="text-gray-600 text-lg max-w-3xl mx-auto">
+              Get a free consultation and estimate for your painting project
+              today. Try our AI preview app to see your new colors before we
+              start!
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="bg-gray-50 rounded-lg shadow-md p-8">
+              <h3 class="text-2xl font-bold mb-6 text-primary">Contact Us</h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <svg
+                    class="w-[22px] h-[22px] text-primary mr-4 mt-1 flex-shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    ></path>
+                  </svg>
+                  <div>
+                    <h4 class="font-semibold text-lg mb-1">Call Us Directly</h4>
+                    <p class="text-gray-700 mb-1">(509) 461-7090</p>
+                    <p class="text-sm text-gray-500">
+                      For consultations and estimates
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <svg
+                    class="w-[22px] h-[22px] text-primary mr-4 mt-1 flex-shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    ></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <div>
+                    <h4 class="font-semibold text-lg mb-1">Email Us</h4>
+                    <p class="text-gray-700 mb-1">trulypaintings@gmail.com</p>
+                    <p class="text-sm text-gray-500">
+                      For detailed inquiries and quotes
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <svg
+                    class="w-[22px] h-[22px] text-primary mr-4 mt-1 flex-shrink-0"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <div>
+                    <h4 class="font-semibold text-lg mb-1">Hours</h4>
+                    <p class="text-gray-700 mb-1">Monday-Friday: 8am-6pm</p>
+                    <p class="text-sm text-gray-500">
+                      Serving Newport and surrounding areas
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 pt-6 border-t border-gray-200">
+                <h4 class="font-semibold text-lg mb-3">Visit Our Office</h4>
+                <div class="flex items-start mb-4">
+                  <svg
+                    class="w-5 h-5 text-primary mr-2 mt-1"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <div>
+                    <p class="text-gray-700">141 Elu Beach Rd</p>
+                    <p class="text-gray-700">Newport, WA 99156</p>
+                  </div>
+                </div>
+
+                <h4 class="font-semibold text-lg mb-3 mt-6">
+                  Professional Credentials
+                </h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-center">
+                    <svg
+                      class="w-4 h-4 text-primary mr-2"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    Licensed Professional Painters
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-4 h-4 text-primary mr-2"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    Fully Insured and Bonded
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-md p-8 border border-gray-200"
+            >
+              <h3 class="text-2xl font-bold mb-6 text-primary">
+                Request Your Free Estimate
+              </h3>
+              <form class="space-y-4">
+                <div>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name*"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number*"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address*"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
+                    required
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="address"
+                    placeholder="Newport Address/Area"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
+                  />
+                </div>
+                <div>
+                  <select
+                    name="projectType"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
+                  >
+                    <option value="">Select Painting Project Type*</option>
+                    <option value="interior">Interior Painting</option>
+                    <option value="exterior">Exterior Painting</option>
+                    <option value="cabinet">Cabinet Refinishing</option>
+                    <option value="commercial">Commercial Painting</option>
+                    <option value="special">Special Finishes</option>
+                    <option value="other">Other (Please Specify)</option>
+                  </select>
+                </div>
+                <div>
+                  <textarea
+                    name="projectDescription"
+                    placeholder="Tell us about your painting project*"
+                    rows="4"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-md transition"
+                >
+                  Submit Request
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <img
+              src="https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/67aee2ab2ba94e912ea18552.png"
+              alt="Truly Painting Logo"
+              class="h-14 mb-4"
+            />
+            <p class="text-gray-300 mb-4">
+              Newport's professional painting services. Quality craftsmanship,
+              innovative solutions, and our exclusive AI preview app.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-primary hover:text-primary/80 transition">
+                <span class="sr-only">Facebook</span>
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="text-primary hover:text-primary/80 transition">
+                <span class="sr-only">Instagram</span>
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <svg
+                  class="w-[18px] h-[18px] mr-3 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <a href="tel:5094617090" class="hover:text-primary transition"
+                  >(509) 461-7090</a
+                >
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-[18px] h-[18px] mr-3 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a
+                  href="mailto:trulypaintings@gmail.com"
+                  class="hover:text-primary transition"
+                  >trulypaintings@gmail.com</a
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-[18px] h-[18px] mr-3 text-primary mt-1"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>141 Elu Beach Rd, Newport, WA 99156</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Hours & Information</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li>Monday-Friday: 8am-6pm</li>
+              <li>Serving Newport & Surrounding Areas</li>
+              <li>Fully Insured and Bonded</li>
+              <li>Professional Painting Services</li>
+              <li>Free AI Color Preview App</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 pt-8 mt-8 text-gray-300 text-sm text-center"
+        >
+          <p>
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Truly Painting. All rights reserved.
+          </p>
+          <p class="mt-2">
+            <a href="#" class="hover:text-primary transition">Privacy Policy</a>
+            {' | '}
+            <a href="#" class="hover:text-primary transition"
+              >Terms of Service</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

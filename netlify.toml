@@ -1,0 +1,52 @@
+[build]
+  publish = "dist"
+  command = "npm run build"
+
+# Redirect and rewrite rules
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+  conditions = {Path = {match = "^(?!.*\\.).*$"}}
+
+# Headers for caching and security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
+    Content-Security-Policy = "default-src 'self' https://storage.googleapis.com https://cdn.tailwindcss.com https://fonts.googleapis.com https://fonts.gstatic.com https://images.pexels.com https://sdk.gleap.io; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://sdk.gleap.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' https://storage.googleapis.com https://images.pexels.com https://images.unsplash.com https://images.leadconnectorhq.com data: https://*.cdninstagram.com https://*.fbcdn.net; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://api.gleap.io wss://ws.gleap.io; media-src 'self'; object-src 'none'; frame-src https://messenger-app.gleap.io https://www.instagram.com https://instagram.com https://*.instagram.com;"
+
+# Cache static assets
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
