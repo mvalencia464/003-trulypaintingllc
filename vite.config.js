@@ -9,7 +9,7 @@ export default defineConfig({
         portfolio: resolve(__dirname, 'portfolio.html'),
         services: resolve(__dirname, 'services.html'),
         team: resolve(__dirname, 'team.html'),
-        videos: resolve(__dirname, 'videos.html'),
+        visualizer: resolve(__dirname, 'visualizer.html'),
       },
     },
   },
