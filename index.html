@@ -439,26 +439,42 @@
               <h3 class="text-2xl font-bold text-gray-800 mb-4">
                 Get Your Free Quote
               </h3>
-              <form class="space-y-4" method="POST" name="estimateForm" netlify>
+              <form
+                class="space-y-4"
+                method="POST"
+                name="estimateForm"
+                data-netlify="true"
+              >
+                <input type="hidden" name="form-name" value="estimateForm" />
+                <p class="hidden">
+                  <label>
+                    Don't fill this out if you're human:
+                    <input name="bot-field" />
+                  </label>
+                </p>
                 <input
                   type="text"
+                  name="name"
                   placeholder="Full Name"
                   required
                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
                 />
                 <input
                   type="email"
+                  name="email"
                   placeholder="Email Address"
                   required
                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
                 />
                 <input
                   type="tel"
+                  name="phone"
                   placeholder="Phone Number"
                   required
                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
                 />
                 <select
+                  name="projectType"
                   required
                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
                 >
@@ -470,6 +486,7 @@
                   <option value="special">Special Finishes</option>
                 </select>
                 <textarea
+                  name="message"
                   placeholder="Tell us about your painting project"
                   rows="3"
                   class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
@@ -1595,8 +1612,19 @@
                 class="space-y-4"
                 method="POST"
                 name="contactEstimateForm"
-                netlify
+                data-netlify="true"
               >
+                <input
+                  type="hidden"
+                  name="form-name"
+                  value="contactEstimateForm"
+                />
+                <p class="hidden">
+                  <label>
+                    Don't fill this out if you're human:
+                    <input name="bot-field" />
+                  </label>
+                </p>
                 <div>
                   <input
                     type="text"
