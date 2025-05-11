@@ -163,6 +163,21 @@
         }
       })();
     </script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NBKXB3TF");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
   <body class="font-sans text-gray-800">
     <!-- Header -->
@@ -380,7 +395,9 @@
     </script>
 
     <!-- Hero Section -->
-    <section class="relative h-[75vh] flex items-center">
+    <section
+      class="relative min-h-[90vh] md:h-[75vh] flex items-center py-16 md:py-0"
+    >
       <div class="absolute inset-0">
         <img
           src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1500/u_https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/681e457f9a0ad363e9275d5c.webp"
@@ -394,7 +411,7 @@
         <div class="grid md:grid-cols-5 gap-8 items-center">
           <div class="md:col-span-3 text-white">
             <h1
-              class="text-4xl md:text-5xl font-bold leading-tight mb-6 animate-fadeIn"
+              class="text-3xl md:text-5xl font-bold leading-tight mb-4 md:mb-6 animate-fadeIn"
             >
               <span class="rose-gold-gradient"
                 >Spokane, See Your Home Transformed</span
@@ -405,16 +422,16 @@
               Paint Preview, Then Let Us Bring It to Life with Expert
               Craftsmanship.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4">
+            <div class="flex flex-col sm:flex-row gap-4 mb-8 md:mb-0">
               <a
                 href="#contact"
-                class="px-8 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-md text-center transition"
+                class="px-6 md:px-8 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-md text-center transition"
               >
                 Get Your FREE Estimate Today!
               </a>
               <a
                 href="tel:5094617090"
-                class="px-8 py-3 bg-white hover:bg-gray-100 text-primary font-semibold rounded-md text-center transition flex items-center justify-center"
+                class="px-6 md:px-8 py-3 bg-white hover:bg-gray-100 text-primary font-semibold rounded-md text-center transition flex items-center justify-center"
               >
                 <svg
                   class="w-5 h-5 mr-2"
@@ -434,74 +451,579 @@
             </div>
           </div>
 
-          <div class="md:col-span-2">
-            <div class="bg-white rounded-lg shadow-xl p-6 max-w-sm mx-auto">
-              <h3 class="text-2xl font-bold text-gray-800 mb-4">
-                Get Your Free Quote
-              </h3>
-              <form
-                class="space-y-4"
-                method="POST"
-                name="estimateForm"
-                data-netlify="true"
-              >
-                <input type="hidden" name="form-name" value="estimateForm" />
-                <p class="hidden">
-                  <label>
-                    Don't fill this out if you're human:
-                    <input name="bot-field" />
-                  </label>
-                </p>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Full Name"
-                  required
-                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Email Address"
-                  required
-                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
-                />
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Phone Number"
-                  required
-                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
-                />
-                <select
-                  name="projectType"
-                  required
-                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
-                >
-                  <option value="">Select Project Type</option>
-                  <option value="interior">Interior Painting</option>
-                  <option value="exterior">Exterior Painting</option>
-                  <option value="cabinet">Cabinet Refinishing</option>
-                  <option value="commercial">Commercial Painting</option>
-                  <option value="special">Special Finishes</option>
-                </select>
-                <textarea
-                  name="message"
-                  placeholder="Tell us about your painting project"
-                  rows="3"
-                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
-                ></textarea>
-                <button
-                  type="submit"
-                  class="w-full py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-md transition"
-                >
-                  Request Free Quote
-                </button>
-              </form>
+          <div class="md:col-span-2 w-full">
+            <div class="bg-white rounded-xl shadow-xl max-w-sm mx-auto w-full">
+              <!-- JobTread Form -->
+              <style>
+                @layer properties;
+                @layer theme, base, components, utilities;
+                @layer theme {
+                  .jtwf {
+                    --color-red-500: oklch(63.7% 0.237 25.331);
+                    --color-blue-500: oklch(62.3% 0.214 259.815);
+                    --color-gray-50: oklch(98.5% 0.002 247.839);
+                    --color-gray-200: oklch(92.8% 0.006 264.531);
+                    --color-gray-300: oklch(87.2% 0.01 258.338);
+                    --color-gray-500: oklch(55.1% 0.027 264.364);
+                    --color-white: #fff;
+                    --spacing: 0.25rem;
+                    --container-sm: 24rem;
+                    --text-xl: 1.25rem;
+                    --text-xl--line-height: 1.4;
+                    --font-weight-normal: 400;
+                    --font-weight-bold: 700;
+                    --radius-sm: 0.25rem;
+                    --default-transition-duration: 250ms;
+                    --default-transition-timing-function: cubic-bezier(
+                      0.4,
+                      0,
+                      0.2,
+                      1
+                    );
+                  }
+                }
+                @layer utilities {
+                  .jtwf .mx-auto {
+                    margin-inline: auto;
+                  }
+                  .jtwf .block {
+                    display: block;
+                  }
+                  .jtwf .flex {
+                    display: flex;
+                  }
+                  .jtwf .max-h-24 {
+                    max-height: calc(var(--spacing) * 24);
+                  }
+                  .jtwf .w-full {
+                    width: 100%;
+                  }
+                  .jtwf .max-w-full {
+                    max-width: 100%;
+                  }
+                  .jtwf .max-w-sm {
+                    max-width: var(--container-sm);
+                  }
+                  .jtwf .min-w-0 {
+                    min-width: calc(var(--spacing) * 0);
+                  }
+                  .jtwf .shrink-0 {
+                    flex-shrink: 0;
+                  }
+                  .jtwf .grow {
+                    flex-grow: 1;
+                  }
+                  .jtwf .cursor-pointer {
+                    cursor: pointer;
+                  }
+                  .jtwf .appearance-none {
+                    appearance: none;
+                  }
+                  .jtwf .items-center {
+                    align-items: center;
+                  }
+                  .jtwf .gap-2 {
+                    gap: calc(var(--spacing) * 2);
+                  }
+                  .jtwf .space-y-2 {
+                    :where(& > :not(:last-child)) {
+                      --tw-space-y-reverse: 0;
+                      margin-block-end: calc(
+                        var(--spacing) * 2 * (1 - var(--tw-space-y-reverse))
+                      );
+                      margin-block-start: calc(
+                        var(--spacing) * 2 * var(--tw-space-y-reverse)
+                      );
+                    }
+                  }
+                  .jtwf .divide-y {
+                    :where(& > :not(:last-child)) {
+                      --tw-divide-y-reverse: 0;
+                      border-bottom-style: var(--tw-border-style);
+                      border-bottom-width: calc(
+                        1px * (1 - var(--tw-divide-y-reverse))
+                      );
+                      border-top-style: var(--tw-border-style);
+                      border-top-width: calc(1px * var(--tw-divide-y-reverse));
+                    }
+                  }
+                  .jtwf .overflow-hidden {
+                    overflow: hidden;
+                  }
+                  .jtwf .rounded-sm {
+                    border-radius: var(--radius-sm);
+                  }
+                  .jtwf .border {
+                    border-style: var(--tw-border-style);
+                    border-width: 1px;
+                  }
+                  .jtwf .bg-white {
+                    background-color: var(--color-white);
+                  }
+                  .jtwf .p-2 {
+                    padding: calc(var(--spacing) * 2);
+                  }
+                  .jtwf .p-4 {
+                    padding: calc(var(--spacing) * 4);
+                  }
+                  .jtwf .px-4 {
+                    padding-inline: calc(var(--spacing) * 4);
+                  }
+                  .jtwf .py-2 {
+                    padding-block: calc(var(--spacing) * 2);
+                  }
+                  .jtwf .text-center {
+                    text-align: center;
+                  }
+                  .jtwf .text-right {
+                    text-align: right;
+                  }
+                  .jtwf .text-xl {
+                    font-size: var(--text-xl);
+                    line-height: var(--tw-leading, var(--text-xl--line-height));
+                  }
+                  .jtwf .font-bold {
+                    --tw-font-weight: var(--font-weight-bold);
+                    font-weight: var(--font-weight-bold);
+                  }
+                  .jtwf .font-normal {
+                    --tw-font-weight: var(--font-weight-normal);
+                    font-weight: var(--font-weight-normal);
+                  }
+                  .jtwf .text-gray-500 {
+                    color: var(--color-gray-500);
+                  }
+                  .jtwf .text-red-500 {
+                    color: var(--color-red-500);
+                  }
+                  .jtwf .shadow-sm {
+                    --tw-shadow: 0 1px 3px 0
+                        var(--tw-shadow-color, rgba(0, 0, 0, 0.1)),
+                      0 1px 2px -1px var(--tw-shadow-color, rgba(0, 0, 0, 0.1));
+                  }
+                  .jtwf .shadow-sm,
+                  .jtwf .shadow-xs {
+                    box-shadow: var(--tw-inset-shadow),
+                      var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+                      var(--tw-ring-shadow), var(--tw-shadow);
+                  }
+                  .jtwf .shadow-xs {
+                    --tw-shadow: 0 1px 2px 0
+                      var(--tw-shadow-color, rgba(0, 0, 0, 0.05));
+                  }
+                  .jtwf .ring {
+                    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+                      calc(1px + var(--tw-ring-offset-width))
+                      var(--tw-ring-color, currentcolor);
+                    box-shadow: var(--tw-inset-shadow),
+                      var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+                      var(--tw-ring-shadow), var(--tw-shadow);
+                  }
+                  .jtwf .ring-gray-200 {
+                    --tw-ring-color: var(--color-gray-200);
+                  }
+                  .jtwf .transition {
+                    transition-duration: var(
+                      --tw-duration,
+                      var(--default-transition-duration)
+                    );
+                    transition-property: color, background-color, border-color,
+                      outline-color, text-decoration-color, fill, stroke,
+                      --tw-gradient-from, --tw-gradient-via, --tw-gradient-to,
+                      opacity, box-shadow, transform, translate, scale, rotate,
+                      filter, -webkit-backdrop-filter, backdrop-filter, display,
+                      visibility, content-visibility, overlay, pointer-events;
+                    transition-timing-function: var(
+                      --tw-ease,
+                      var(--default-transition-timing-function)
+                    );
+                  }
+                  .jtwf .focus-within\:bg-white {
+                    &:focus-within {
+                      background-color: var(--color-white);
+                    }
+                  }
+                  .jtwf .focus-within\:ring-3 {
+                    &:focus-within {
+                      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+                        calc(3px + var(--tw-ring-offset-width))
+                        var(--tw-ring-color, currentcolor);
+                      box-shadow: var(--tw-inset-shadow),
+                        var(--tw-inset-ring-shadow),
+                        var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+                        var(--tw-shadow);
+                    }
+                  }
+                  .jtwf .focus-within\:ring-blue-500 {
+                    &:focus-within {
+                      --tw-ring-color: var(--color-blue-500);
+                    }
+                  }
+                  .jtwf .hover\:bg-gray-50 {
+                    &:hover {
+                      @media (hover: hover) {
+                        background-color: var(--color-gray-50);
+                      }
+                    }
+                  }
+                  .jtwf .hover\:brightness-95 {
+                    &:hover {
+                      @media (hover: hover) {
+                        --tw-brightness: brightness(95%);
+                        filter: var(--tw-blur) var(--tw-brightness)
+                          var(--tw-contrast) var(--tw-grayscale)
+                          var(--tw-hue-rotate) var(--tw-invert)
+                          var(--tw-saturate) var(--tw-sepia)
+                          var(--tw-drop-shadow);
+                      }
+                    }
+                  }
+                  .jtwf .\[\&\:\:-webkit-date-and-time-value\]\:h-5 {
+                    &::-webkit-date-and-time-value {
+                      height: calc(var(--spacing) * 5);
+                    }
+                  }
+                  .jtwf .hover\:\[\&\:not\(\:focus-within\)\]\:border-gray-300 {
+                    &:hover {
+                      @media (hover: hover) {
+                        .jtwf &:not(:focus-within) {
+                          border-color: var(--color-gray-300);
+                        }
+                      }
+                    }
+                  }
+                  .jtwf .hover\:\[\&\:not\(\:focus-within\)\]\:bg-gray-50 {
+                    &:hover {
+                      @media (hover: hover) {
+                        .jtwf &:not(:focus-within) {
+                          background-color: var(--color-gray-50);
+                        }
+                      }
+                    }
+                  }
+                }
+                @layer base {
+                  .jtwf *,
+                  .jtwf ::backdrop,
+                  .jtwf ::file-selector-button,
+                  .jtwf :after,
+                  .jtwf :before {
+                    border-color: var(--color-gray-200, currentColor);
+                  }
+                  .jtwf * {
+                    border: 0 solid #e5e7eb;
+                    box-sizing: border-box;
+                  }
+                  .jtwf button,
+                  .jtwf input,
+                  .jtwf optgroup,
+                  .jtwf select,
+                  .jtwf textarea {
+                    color: inherit;
+                    font-family: inherit;
+                    font-size: 100%;
+                    font-weight: inherit;
+                    line-height: inherit;
+                    margin: 0;
+                    padding: 0;
+                  }
+                }
+                @property --tw-space-y-reverse {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0;
+                }
+                @property --tw-divide-y-reverse {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0;
+                }
+                @property --tw-border-style {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: solid;
+                }
+                @property --tw-font-weight {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-shadow {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0 0 #0000;
+                }
+                @property --tw-shadow-color {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-shadow-alpha {
+                  syntax: "<percentage>";
+                  inherits: false;
+                  initial-value: 100%;
+                }
+                @property --tw-inset-shadow {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0 0 #0000;
+                }
+                @property --tw-inset-shadow-color {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-inset-shadow-alpha {
+                  syntax: "<percentage>";
+                  inherits: false;
+                  initial-value: 100%;
+                }
+                @property --tw-ring-color {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-ring-shadow {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0 0 #0000;
+                }
+                @property --tw-inset-ring-color {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-inset-ring-shadow {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0 0 #0000;
+                }
+                @property --tw-ring-inset {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-ring-offset-width {
+                  syntax: "<length>";
+                  inherits: false;
+                  initial-value: 0;
+                }
+                @property --tw-ring-offset-color {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: #fff;
+                }
+                @property --tw-ring-offset-shadow {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0 0 #0000;
+                }
+                @property --tw-blur {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-brightness {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-contrast {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-grayscale {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-hue-rotate {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-invert {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-opacity {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-saturate {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-sepia {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-drop-shadow {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-drop-shadow-color {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-drop-shadow-alpha {
+                  syntax: "<percentage>";
+                  inherits: false;
+                  initial-value: 100%;
+                }
+                @property --tw-drop-shadow-size {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @layer properties {
+                  @supports (
+                      (-webkit-hyphens: none) and (not (margin-trim: inline))
+                    )
+                    or
+                    (
+                      (-moz-orient: inline) and
+                        (not (color: rgb(from red r g b)))
+                    ) {
+                    .jtwf *,
+                    .jtwf ::backdrop,
+                    .jtwf :after,
+                    .jtwf :before {
+                      --tw-space-y-reverse: 0;
+                      --tw-divide-y-reverse: 0;
+                      --tw-border-style: solid;
+                      --tw-font-weight: initial;
+                      --tw-shadow: 0 0 #0000;
+                      --tw-shadow-color: initial;
+                      --tw-shadow-alpha: 100%;
+                      --tw-inset-shadow: 0 0 #0000;
+                      --tw-inset-shadow-color: initial;
+                      --tw-inset-shadow-alpha: 100%;
+                      --tw-ring-color: initial;
+                      --tw-ring-shadow: 0 0 #0000;
+                      --tw-inset-ring-color: initial;
+                      --tw-inset-ring-shadow: 0 0 #0000;
+                      --tw-ring-inset: initial;
+                      --tw-ring-offset-width: 0px;
+                      --tw-ring-offset-color: #fff;
+                      --tw-ring-offset-shadow: 0 0 #0000;
+                      --tw-blur: initial;
+                      --tw-brightness: initial;
+                      --tw-contrast: initial;
+                      --tw-grayscale: initial;
+                      --tw-hue-rotate: initial;
+                      --tw-invert: initial;
+                      --tw-opacity: initial;
+                      --tw-saturate: initial;
+                      --tw-sepia: initial;
+                      --tw-drop-shadow: initial;
+                      --tw-drop-shadow-color: initial;
+                      --tw-drop-shadow-alpha: 100%;
+                      --tw-drop-shadow-size: initial;
+                    }
+                  }
+                }
+                .jtwf input,
+                .jtwf textarea,
+                .jtwf select {
+                  border-radius: 0.5rem !important; /* Increase border radius (8px) */
+                  border: 1px solid #e5e7eb !important; /* Thinner border */
+                  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+                  --tw-ring-width: 0 !important; /* Remove the thick ring */
+                }
 
-              <div class="mt-4 text-center">
+                .jtwf input:focus,
+                .jtwf textarea:focus,
+                .jtwf select:focus {
+                  border-color: #d4a59a !important; /* Primary color border on focus */
+                  box-shadow: 0 0 0 2px rgba(212, 165, 154, 0.2) !important; /* Subtle focus shadow */
+                  --tw-ring-width: 0 !important;
+                }
+
+                /* Style the file input to match other inputs */
+                .jtwf input[type="file"] {
+                  padding: 0.5rem !important;
+                }
+
+                /* Style the submit button to match site theme */
+                .jtwf button[data-submit-button="true"] {
+                  border-radius: 0.5rem !important;
+                  font-weight: 500 !important;
+                  transition: all 0.2s ease !important;
+                  background-color: #d4a59a !important;
+                  color: white !important;
+                  padding: 0.75rem 1.5rem !important;
+                  width: 100% !important;
+                }
+              </style>
+              <link
+                rel="preload"
+                as="image"
+                href="https://cdn.jobtread.com/G1IASBwHdkw8xHbou6bBc-Tjat4eKdBhTx2WvhSJeWtFBPIoKhUCyq_BcvPhD6QlQ53g3FkquIFWgIC2x_MlnNdDMpSTH2MNciCaMw.Wo-c9cmNlJNvsqOMmDnssEy4ITpvdH84lbjcwQyU6fI?size=1024"
+              />
+              <form
+                class="jtwf w-full"
+                data-jobtread-web-form="true"
+                data-key="22SP2R8wiQtQ349YSmzU79SwpZgPyAXDuq"
+                data-success-url="https://www.trulypaintingllc.com/thank-you"
+              >
+                <div
+                  class="mx-auto min-w-0 w-full rounded-lg shadow-sm bg-white"
+                >
+                  <div class="p-4 shadow-line-bottom rounded-t-lg">
+                    <img
+                      class="block max-w-full max-h-24 mx-auto"
+                      src="https://cdn.jobtread.com/G1IASBwHdkw8xHbou6bBc-Tjat4eKdBhTx2WvhSJeWtFBPIoKhUCyq_BcvPhD6QlQ53g3FkquIFWgIC2x_MlnNdDMpSTH2MNciCaMw.Wo-c9cmNlJNvsqOMmDnssEy4ITpvdH84lbjcwQyU6fI?size=1024"
+                    />
+                  </div>
+                  <div class="p-4 space-y-2">
+                    <label class="cursor-pointer block"
+                      ><div class="font-bold">
+                        Name<span class="font-normal text-red-500">*</span>
+                      </div>
+                      <input
+                        class="rounded-lg ring ring-gray-200 p-2 w-full bg-white appearance-none transition hover:[&amp;:not(:focus-within)]:bg-gray-50 hover:[&amp;:not(:focus-within)]:border-gray-300 focus-within:bg-white focus-within:ring-3 focus-within:ring-blue-500 [&amp;::-webkit-date-and-time-value]:h-5"
+                        type="text"
+                        required=""
+                        name="contact.name" /></label
+                    ><label class="cursor-pointer block"
+                      ><div class="font-bold">
+                        Phone<span class="font-normal text-red-500">*</span>
+                      </div>
+                      <input
+                        class="rounded-lg ring ring-gray-200 p-2 w-full bg-white appearance-none transition hover:[&amp;:not(:focus-within)]:bg-gray-50 hover:[&amp;:not(:focus-within)]:border-gray-300 focus-within:bg-white focus-within:ring-3 focus-within:ring-blue-500 [&amp;::-webkit-date-and-time-value]:h-5"
+                        type="tel"
+                        required=""
+                        name="contact.custom.22NfGfMWhVMG" /></label
+                    ><label class="cursor-pointer block"
+                      ><div class="font-bold">
+                        Email<span class="font-normal text-red-500">*</span>
+                      </div>
+                      <input
+                        class="rounded-lg ring ring-gray-200 p-2 w-full bg-white appearance-none transition hover:[&amp;:not(:focus-within)]:bg-gray-50 hover:[&amp;:not(:focus-within)]:border-gray-300 focus-within:bg-white focus-within:ring-3 focus-within:ring-blue-500 [&amp;::-webkit-date-and-time-value]:h-5"
+                        type="email"
+                        required=""
+                        name="contact.custom.22NfGfMNnXU5" /></label
+                    ><label class="cursor-pointer block"
+                      ><div class="font-bold">Address</div>
+                      <textarea
+                        class="rounded-lg ring ring-gray-200 p-2 w-full bg-white appearance-none transition hover:[&amp;:not(:focus-within)]:bg-gray-50 hover:[&amp;:not(:focus-within)]:border-gray-300 focus-within:bg-white focus-within:ring-3 focus-within:ring-blue-500 [&amp;::-webkit-date-and-time-value]:h-5"
+                        name="location.address"
+                      ></textarea></label
+                    ><label class="cursor-pointer block"
+                      ><div class="font-bold">Files &amp; Photos</div>
+                      <input
+                        class="rounded-lg ring ring-gray-200 p-2 w-full bg-white appearance-none transition hover:[&amp;:not(:focus-within)]:bg-gray-50 hover:[&amp;:not(:focus-within)]:border-gray-300 focus-within:bg-white focus-within:ring-3 focus-within:ring-blue-500 [&amp;::-webkit-date-and-time-value]:h-5"
+                        type="file"
+                        multiple=""
+                        name="account.files"
+                    /></label>
+                    <div class="text-center">
+                      <button
+                        class="w-full px-4 py-3 rounded-lg shadow-xs cursor-pointer hover:brightness-95 font-semibold"
+                        data-submit-button="true"
+                        style="background-color: #d4a59a; color: white"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <script async src="https://app.jobtread.com/web-form.js"></script>
+
+              <div class="p-4 text-center">
                 <div class="flex items-center justify-center mb-2">
-                  <div class="text-primary">★★★★★</div>
+                  <div class="text-primary text-lg">★★★★★</div>
                   <span class="ml-2 text-gray-700 font-medium"
                     >4.9/5 (85 Reviews)</span
                   >
@@ -1603,94 +2125,581 @@
             </div>
 
             <div
-              class="bg-white rounded-lg shadow-md p-8 border border-gray-200"
+              class="bg-white rounded-lg shadow-md p-6 border border-gray-200"
             >
               <h3 class="text-2xl font-bold mb-6 text-primary">
                 Request Your Free Estimate
               </h3>
+              <!-- JobTread Form -->
+              <style>
+                @layer properties;
+                @layer theme, base, components, utilities;
+                @layer theme {
+                  .jtwf {
+                    --color-red-500: oklch(63.7% 0.237 25.331);
+                    --color-blue-500: oklch(62.3% 0.214 259.815);
+                    --color-gray-50: oklch(98.5% 0.002 247.839);
+                    --color-gray-200: oklch(92.8% 0.006 264.531);
+                    --color-gray-300: oklch(87.2% 0.01 258.338);
+                    --color-gray-500: oklch(55.1% 0.027 264.364);
+                    --color-white: #fff;
+                    --spacing: 0.25rem;
+                    --container-sm: 24rem;
+                    --text-xl: 1.25rem;
+                    --text-xl--line-height: 1.4;
+                    --font-weight-normal: 400;
+                    --font-weight-bold: 700;
+                    --radius-sm: 0.25rem;
+                    --default-transition-duration: 250ms;
+                    --default-transition-timing-function: cubic-bezier(
+                      0.4,
+                      0,
+                      0.2,
+                      1
+                    );
+                  }
+                }
+                @layer utilities {
+                  .jtwf .mx-auto {
+                    margin-inline: auto;
+                  }
+                  .jtwf .block {
+                    display: block;
+                  }
+                  .jtwf .flex {
+                    display: flex;
+                  }
+                  .jtwf .max-h-24 {
+                    max-height: calc(var(--spacing) * 24);
+                  }
+                  .jtwf .w-full {
+                    width: 100%;
+                  }
+                  .jtwf .max-w-full {
+                    max-width: 100%;
+                  }
+                  .jtwf .max-w-sm {
+                    max-width: var(--container-sm);
+                  }
+                  .jtwf .min-w-0 {
+                    min-width: calc(var(--spacing) * 0);
+                  }
+                  .jtwf .shrink-0 {
+                    flex-shrink: 0;
+                  }
+                  .jtwf .grow {
+                    flex-grow: 1;
+                  }
+                  .jtwf .cursor-pointer {
+                    cursor: pointer;
+                  }
+                  .jtwf .appearance-none {
+                    appearance: none;
+                  }
+                  .jtwf .items-center {
+                    align-items: center;
+                  }
+                  .jtwf .gap-2 {
+                    gap: calc(var(--spacing) * 2);
+                  }
+                  .jtwf .space-y-2 {
+                    :where(& > :not(:last-child)) {
+                      --tw-space-y-reverse: 0;
+                      margin-block-end: calc(
+                        var(--spacing) * 2 * (1 - var(--tw-space-y-reverse))
+                      );
+                      margin-block-start: calc(
+                        var(--spacing) * 2 * var(--tw-space-y-reverse)
+                      );
+                    }
+                  }
+                  .jtwf .divide-y {
+                    :where(& > :not(:last-child)) {
+                      --tw-divide-y-reverse: 0;
+                      border-bottom-style: var(--tw-border-style);
+                      border-bottom-width: calc(
+                        1px * (1 - var(--tw-divide-y-reverse))
+                      );
+                      border-top-style: var(--tw-border-style);
+                      border-top-width: calc(1px * var(--tw-divide-y-reverse));
+                    }
+                  }
+                  .jtwf .overflow-hidden {
+                    overflow: hidden;
+                  }
+                  .jtwf .rounded-sm {
+                    border-radius: var(--radius-sm);
+                  }
+                  .jtwf .border {
+                    border-style: var(--tw-border-style);
+                    border-width: 1px;
+                  }
+                  .jtwf .bg-white {
+                    background-color: var(--color-white);
+                  }
+                  .jtwf .p-2 {
+                    padding: calc(var(--spacing) * 2);
+                  }
+                  .jtwf .p-4 {
+                    padding: calc(var(--spacing) * 4);
+                  }
+                  .jtwf .px-4 {
+                    padding-inline: calc(var(--spacing) * 4);
+                  }
+                  .jtwf .py-2 {
+                    padding-block: calc(var(--spacing) * 2);
+                  }
+                  .jtwf .text-center {
+                    text-align: center;
+                  }
+                  .jtwf .text-right {
+                    text-align: right;
+                  }
+                  .jtwf .text-xl {
+                    font-size: var(--text-xl);
+                    line-height: var(--tw-leading, var(--text-xl--line-height));
+                  }
+                  .jtwf .font-bold {
+                    --tw-font-weight: var(--font-weight-bold);
+                    font-weight: var(--font-weight-bold);
+                  }
+                  .jtwf .font-normal {
+                    --tw-font-weight: var(--font-weight-normal);
+                    font-weight: var(--font-weight-normal);
+                  }
+                  .jtwf .text-gray-500 {
+                    color: var(--color-gray-500);
+                  }
+                  .jtwf .text-red-500 {
+                    color: var(--color-red-500);
+                  }
+                  .jtwf .shadow-sm {
+                    --tw-shadow: 0 1px 3px 0
+                        var(--tw-shadow-color, rgba(0, 0, 0, 0.1)),
+                      0 1px 2px -1px var(--tw-shadow-color, rgba(0, 0, 0, 0.1));
+                  }
+                  .jtwf .shadow-sm,
+                  .jtwf .shadow-xs {
+                    box-shadow: var(--tw-inset-shadow),
+                      var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+                      var(--tw-ring-shadow), var(--tw-shadow);
+                  }
+                  .jtwf .shadow-xs {
+                    --tw-shadow: 0 1px 2px 0
+                      var(--tw-shadow-color, rgba(0, 0, 0, 0.05));
+                  }
+                  .jtwf .ring {
+                    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+                      calc(1px + var(--tw-ring-offset-width))
+                      var(--tw-ring-color, currentcolor);
+                    box-shadow: var(--tw-inset-shadow),
+                      var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow),
+                      var(--tw-ring-shadow), var(--tw-shadow);
+                  }
+                  .jtwf .ring-gray-200 {
+                    --tw-ring-color: var(--color-gray-200);
+                  }
+                  .jtwf .transition {
+                    transition-duration: var(
+                      --tw-duration,
+                      var(--default-transition-duration)
+                    );
+                    transition-property: color, background-color, border-color,
+                      outline-color, text-decoration-color, fill, stroke,
+                      --tw-gradient-from, --tw-gradient-via, --tw-gradient-to,
+                      opacity, box-shadow, transform, translate, scale, rotate,
+                      filter, -webkit-backdrop-filter, backdrop-filter, display,
+                      visibility, content-visibility, overlay, pointer-events;
+                    transition-timing-function: var(
+                      --tw-ease,
+                      var(--default-transition-timing-function)
+                    );
+                  }
+                  .jtwf .focus-within\:bg-white {
+                    &:focus-within {
+                      background-color: var(--color-white);
+                    }
+                  }
+                  .jtwf .focus-within\:ring-3 {
+                    &:focus-within {
+                      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+                        calc(3px + var(--tw-ring-offset-width))
+                        var(--tw-ring-color, currentcolor);
+                      box-shadow: var(--tw-inset-shadow),
+                        var(--tw-inset-ring-shadow),
+                        var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+                        var(--tw-shadow);
+                    }
+                  }
+                  .jtwf .focus-within\:ring-blue-500 {
+                    &:focus-within {
+                      --tw-ring-color: var(--color-blue-500);
+                    }
+                  }
+                  .jtwf .hover\:bg-gray-50 {
+                    &:hover {
+                      @media (hover: hover) {
+                        background-color: var(--color-gray-50);
+                      }
+                    }
+                  }
+                  .jtwf .hover\:brightness-95 {
+                    &:hover {
+                      @media (hover: hover) {
+                        --tw-brightness: brightness(95%);
+                        filter: var(--tw-blur) var(--tw-brightness)
+                          var(--tw-contrast) var(--tw-grayscale)
+                          var(--tw-hue-rotate) var(--tw-invert)
+                          var(--tw-saturate) var(--tw-sepia)
+                          var(--tw-drop-shadow);
+                      }
+                    }
+                  }
+                  .jtwf .\[\&\:\:-webkit-date-and-time-value\]\:h-5 {
+                    &::-webkit-date-and-time-value {
+                      height: calc(var(--spacing) * 5);
+                    }
+                  }
+                  .jtwf .hover\:\[\&\:not\(\:focus-within\)\]\:border-gray-300 {
+                    &:hover {
+                      @media (hover: hover) {
+                        .jtwf &:not(:focus-within) {
+                          border-color: var(--color-gray-300);
+                        }
+                      }
+                    }
+                  }
+                  .jtwf .hover\:\[\&\:not\(\:focus-within\)\]\:bg-gray-50 {
+                    &:hover {
+                      @media (hover: hover) {
+                        .jtwf &:not(:focus-within) {
+                          background-color: var(--color-gray-50);
+                        }
+                      }
+                    }
+                  }
+                }
+                @layer base {
+                  .jtwf *,
+                  .jtwf ::backdrop,
+                  .jtwf ::file-selector-button,
+                  .jtwf :after,
+                  .jtwf :before {
+                    border-color: var(--color-gray-200, currentColor);
+                  }
+                  .jtwf * {
+                    border: 0 solid #e5e7eb;
+                    box-sizing: border-box;
+                  }
+                  .jtwf button,
+                  .jtwf input,
+                  .jtwf optgroup,
+                  .jtwf select,
+                  .jtwf textarea {
+                    color: inherit;
+                    font-family: inherit;
+                    font-size: 100%;
+                    font-weight: inherit;
+                    line-height: inherit;
+                    margin: 0;
+                    padding: 0;
+                  }
+                }
+                @property --tw-space-y-reverse {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0;
+                }
+                @property --tw-divide-y-reverse {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0;
+                }
+                @property --tw-border-style {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: solid;
+                }
+                @property --tw-font-weight {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-shadow {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0 0 #0000;
+                }
+                @property --tw-shadow-color {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-shadow-alpha {
+                  syntax: "<percentage>";
+                  inherits: false;
+                  initial-value: 100%;
+                }
+                @property --tw-inset-shadow {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0 0 #0000;
+                }
+                @property --tw-inset-shadow-color {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-inset-shadow-alpha {
+                  syntax: "<percentage>";
+                  inherits: false;
+                  initial-value: 100%;
+                }
+                @property --tw-ring-color {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-ring-shadow {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0 0 #0000;
+                }
+                @property --tw-inset-ring-color {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-inset-ring-shadow {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0 0 #0000;
+                }
+                @property --tw-ring-inset {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-ring-offset-width {
+                  syntax: "<length>";
+                  inherits: false;
+                  initial-value: 0;
+                }
+                @property --tw-ring-offset-color {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: #fff;
+                }
+                @property --tw-ring-offset-shadow {
+                  syntax: "*";
+                  inherits: false;
+                  initial-value: 0 0 #0000;
+                }
+                @property --tw-blur {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-brightness {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-contrast {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-grayscale {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-hue-rotate {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-invert {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-opacity {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-saturate {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-sepia {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-drop-shadow {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-drop-shadow-color {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @property --tw-drop-shadow-alpha {
+                  syntax: "<percentage>";
+                  inherits: false;
+                  initial-value: 100%;
+                }
+                @property --tw-drop-shadow-size {
+                  syntax: "*";
+                  inherits: false;
+                }
+                @layer properties {
+                  @supports (
+                      (-webkit-hyphens: none) and (not (margin-trim: inline))
+                    )
+                    or
+                    (
+                      (-moz-orient: inline) and
+                        (not (color: rgb(from red r g b)))
+                    ) {
+                    .jtwf *,
+                    .jtwf ::backdrop,
+                    .jtwf :after,
+                    .jtwf :before {
+                      --tw-space-y-reverse: 0;
+                      --tw-divide-y-reverse: 0;
+                      --tw-border-style: solid;
+                      --tw-font-weight: initial;
+                      --tw-shadow: 0 0 #0000;
+                      --tw-shadow-color: initial;
+                      --tw-shadow-alpha: 100%;
+                      --tw-inset-shadow: 0 0 #0000;
+                      --tw-inset-shadow-color: initial;
+                      --tw-inset-shadow-alpha: 100%;
+                      --tw-ring-color: initial;
+                      --tw-ring-shadow: 0 0 #0000;
+                      --tw-inset-ring-color: initial;
+                      --tw-inset-ring-shadow: 0 0 #0000;
+                      --tw-ring-inset: initial;
+                      --tw-ring-offset-width: 0px;
+                      --tw-ring-offset-color: #fff;
+                      --tw-ring-offset-shadow: 0 0 #0000;
+                      --tw-blur: initial;
+                      --tw-brightness: initial;
+                      --tw-contrast: initial;
+                      --tw-grayscale: initial;
+                      --tw-hue-rotate: initial;
+                      --tw-invert: initial;
+                      --tw-opacity: initial;
+                      --tw-saturate: initial;
+                      --tw-sepia: initial;
+                      --tw-drop-shadow: initial;
+                      --tw-drop-shadow-color: initial;
+                      --tw-drop-shadow-alpha: 100%;
+                      --tw-drop-shadow-size: initial;
+                    }
+                  }
+                }
+                .jtwf input,
+                .jtwf textarea,
+                .jtwf select {
+                  border-radius: 0.5rem !important; /* Increase border radius (8px) */
+                  border: 1px solid #e5e7eb !important; /* Thinner border */
+                  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+                  --tw-ring-width: 0 !important; /* Remove the thick ring */
+                }
+
+                .jtwf input:focus,
+                .jtwf textarea:focus,
+                .jtwf select:focus {
+                  border-color: #d4a59a !important; /* Primary color border on focus */
+                  box-shadow: 0 0 0 2px rgba(212, 165, 154, 0.2) !important; /* Subtle focus shadow */
+                  --tw-ring-width: 0 !important;
+                }
+
+                /* Style the file input to match other inputs */
+                .jtwf input[type="file"] {
+                  padding: 0.5rem !important;
+                }
+
+                /* Style the submit button to match site theme */
+                .jtwf button[data-submit-button="true"] {
+                  border-radius: 0.5rem !important;
+                  font-weight: 500 !important;
+                  transition: all 0.2s ease !important;
+                  background-color: #d4a59a !important;
+                  color: white !important;
+                  padding: 0.75rem 1.5rem !important;
+                  width: 100% !important;
+                }
+              </style>
               <form
-                class="space-y-4"
-                method="POST"
+                class="jtwf w-full"
+                data-jobtread-web-form="true"
+                data-key="22SP2R8wiQtQ349YSmzU79SwpZgPyAXDuq"
+                data-success-url="https://www.trulypaintingllc.com/thank-you"
                 name="contactEstimateForm"
-                data-netlify="true"
               >
-                <input
-                  type="hidden"
-                  name="form-name"
-                  value="contactEstimateForm"
-                />
-                <p class="hidden">
-                  <label>
-                    Don't fill this out if you're human:
-                    <input name="bot-field" />
-                  </label>
-                </p>
-                <div>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Your Name*"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    type="tel"
-                    name="phone"
-                    placeholder="Phone Number*"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email Address*"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    name="address"
-                    placeholder="Newport Address/Area"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
-                  />
-                </div>
-                <div>
-                  <select
-                    name="projectType"
-                    required
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
-                  >
-                    <option value="">Select Painting Project Type*</option>
-                    <option value="interior">Interior Painting</option>
-                    <option value="exterior">Exterior Painting</option>
-                    <option value="cabinet">Cabinet Refinishing</option>
-                    <option value="commercial">Commercial Painting</option>
-                    <option value="special">Special Finishes</option>
-                    <option value="other">Other (Please Specify)</option>
-                  </select>
-                </div>
-                <div>
-                  <textarea
-                    name="projectDescription"
-                    placeholder="Tell us about your painting project*"
-                    rows="4"
-                    class="w-full px-4 py-3 border border-gray-300 rounded-md focus:border-primary focus:ring-1 focus:ring-primary"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-md transition"
+                <div
+                  class="mx-auto min-w-0 w-full rounded-lg shadow-sm bg-white"
                 >
-                  Submit Request
-                </button>
+                  <div class="p-4 space-y-2">
+                    <label class="cursor-pointer block"
+                      ><div class="font-bold">
+                        Name<span class="font-normal text-red-500">*</span>
+                      </div>
+                      <input
+                        class="rounded-lg ring ring-gray-200 p-2 w-full bg-white appearance-none transition hover:[&amp;:not(:focus-within)]:bg-gray-50 hover:[&amp;:not(:focus-within)]:border-gray-300 focus-within:bg-white focus-within:ring-3 focus-within:ring-blue-500 [&amp;::-webkit-date-and-time-value]:h-5"
+                        type="text"
+                        required=""
+                        name="contact.name" /></label
+                    ><label class="cursor-pointer block"
+                      ><div class="font-bold">
+                        Phone<span class="font-normal text-red-500">*</span>
+                      </div>
+                      <input
+                        class="rounded-lg ring ring-gray-200 p-2 w-full bg-white appearance-none transition hover:[&amp;:not(:focus-within)]:bg-gray-50 hover:[&amp;:not(:focus-within)]:border-gray-300 focus-within:bg-white focus-within:ring-3 focus-within:ring-blue-500 [&amp;::-webkit-date-and-time-value]:h-5"
+                        type="tel"
+                        required=""
+                        name="contact.custom.22NfGfMWhVMG" /></label
+                    ><label class="cursor-pointer block"
+                      ><div class="font-bold">
+                        Email<span class="font-normal text-red-500">*</span>
+                      </div>
+                      <input
+                        class="rounded-lg ring ring-gray-200 p-2 w-full bg-white appearance-none transition hover:[&amp;:not(:focus-within)]:bg-gray-50 hover:[&amp;:not(:focus-within)]:border-gray-300 focus-within:bg-white focus-within:ring-3 focus-within:ring-blue-500 [&amp;::-webkit-date-and-time-value]:h-5"
+                        type="email"
+                        required=""
+                        name="contact.custom.22NfGfMNnXU5" /></label
+                    ><label class="cursor-pointer block"
+                      ><div class="font-bold">Address</div>
+                      <textarea
+                        class="rounded-lg ring ring-gray-200 p-2 w-full bg-white appearance-none transition hover:[&amp;:not(:focus-within)]:bg-gray-50 hover:[&amp;:not(:focus-within)]:border-gray-300 focus-within:bg-white focus-within:ring-3 focus-within:ring-blue-500 [&amp;::-webkit-date-and-time-value]:h-5"
+                        name="location.address"
+                      ></textarea></label
+                    ><label class="cursor-pointer block"
+                      ><div class="font-bold">Files &amp; Photos</div>
+                      <input
+                        class="rounded-lg ring ring-gray-200 p-2 w-full bg-white appearance-none transition hover:[&amp;:not(:focus-within)]:bg-gray-50 hover:[&amp;:not(:focus-within)]:border-gray-300 focus-within:bg-white focus-within:ring-3 focus-within:ring-blue-500 [&amp;::-webkit-date-and-time-value]:h-5"
+                        type="file"
+                        multiple=""
+                        name="account.files"
+                    /></label>
+                    <div class="text-center">
+                      <button
+                        class="w-full px-4 py-3 rounded-lg shadow-xs cursor-pointer hover:brightness-95 font-semibold"
+                        data-submit-button="true"
+                        style="background-color: #d4a59a; color: white"
+                      >
+                        Submit Request
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </form>
+              <script async src="https://app.jobtread.com/web-form.js"></script>
+
+              <div class="p-4 text-center">
+                <div class="flex items-center justify-center mb-2">
+                  <div class="text-primary text-lg">★★★★★</div>
+                  <span class="ml-2 text-gray-700 font-medium"
+                    >4.9/5 (85 Reviews)</span
+                  >
+                </div>
+                <p class="text-sm text-gray-600 italic">
+                  "The AI preview was a game-changer! I could finally see how
+                  that bold color would look." - Sarah M.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -1833,5 +2842,28 @@
         </div>
       </div>
     </footer>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NBKXB3TF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Chat Widget  -->
+    <div
+      data-chat-widget
+      data-widget-id="6802ed1930666bcb1727d04c"
+      data-location-id="7mewc5RIQe9kefPF1P31"
+    ></div>
+    <script
+      src="https://widgets.leadconnectorhq.com/loader.js"
+      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
+      data-widget-id="6802ed1930666bcb1727d04c"
+    ></script>
+    <!-- End Chat Widget  -->
   </body>
 </html>
