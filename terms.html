@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms of Service - Truly Painting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#D4A59A", // rose gold as main color for primary CTAs
+              secondary: "#2A2A2A", // deep charcoal/off-black as secondary color
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              serif: ["Merriweather", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .rose-gold-gradient {
+        background: linear-gradient(to right, #d4a59a, #e2c0bb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NBKXB3TF");
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header
+      id="header"
+      class="fixed w-full z-50 transition-all duration-300 py-4 bg-white shadow-md"
+    >
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <a href="index.html">
+              <img
+                src="https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/67aee2ab2ba94e912ea18552.png"
+                alt="Truly Painting Logo"
+                class="h-10 md:h-12"
+              />
+            </a>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:block">
+            <ul class="flex space-x-8">
+              <li>
+                <a
+                  href="index.html"
+                  class="nav-link text-gray-800 hover:text-primary transition font-medium"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services.html"
+                  class="nav-link text-gray-800 hover:text-primary transition font-medium"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="portfolio.html"
+                  class="nav-link text-gray-800 hover:text-primary transition font-medium"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="team.html"
+                  class="nav-link text-gray-800 hover:text-primary transition font-medium"
+                  >Our Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="visualizer.html"
+                  class="nav-link text-gray-800 hover:text-primary transition font-medium"
+                  >AI Preview</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:5094617090"
+                  class="flex items-center bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md font-medium transition"
+                >
+                  <svg
+                    class="w-[18px] h-[18px] mr-2"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    />
+                  </svg>
+                  (509) 461-7090
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button
+            class="md:hidden text-gray-800"
+            onclick="toggleMobileMenu()"
+            aria-label="Toggle Menu"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="md:hidden bg-white absolute w-full left-0 top-full shadow-md hidden"
+      >
+        <div class="container mx-auto px-4 py-4">
+          <ul class="space-y-4">
+            <li>
+              <a
+                href="index.html"
+                class="block text-gray-800 hover:text-primary transition font-medium"
+                onclick="closeMobileMenu()"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="services.html"
+                class="block text-gray-800 hover:text-primary transition font-medium"
+                onclick="closeMobileMenu()"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="portfolio.html"
+                class="block text-gray-800 hover:text-primary transition font-medium"
+                onclick="closeMobileMenu()"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                href="team.html"
+                class="block text-gray-800 hover:text-primary transition font-medium"
+                onclick="closeMobileMenu()"
+                >Our Team</a
+              >
+            </li>
+            <li>
+              <a
+                href="visualizer.html"
+                class="block text-gray-800 hover:text-primary transition font-medium"
+                onclick="closeMobileMenu()"
+                >AI Preview</a
+              >
+            </li>
+            <li>
+              <a
+                href="tel:5094617090"
+                class="flex items-center w-full bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md font-medium transition"
+                onclick="closeMobileMenu()"
+              >
+                <svg
+                  class="w-[18px] h-[18px] mr-2"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+                (509) 461-7090
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Terms of Service Content -->
+    <section class="pt-32 pb-20 bg-white">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="max-w-4xl mx-auto">
+          <h1 class="text-3xl md:text-4xl font-bold mb-8">Terms of Service</h1>
+
+          <div class="prose prose-lg max-w-none">
+            <p>
+              Welcome to vision.trulypaintingllc.com (the "Site"). By accessing
+              and using our Site, you agree to be bound by these Terms of
+              Service ("Terms"). Please read them carefully.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">1. Acceptance of Terms</h2>
+            <p>
+              By using this Site, you signify your acceptance of these Terms. If
+              you do not agree to these Terms, please do not use our Site.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">
+              2. Description of Services
+            </h2>
+            <p>
+              Truly Painting LLC provides information about its high-end luxury
+              painting services through this Site. The content on this Site is
+              for informational purposes only and does not constitute a binding
+              offer for services.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">
+              3. Intellectual Property
+            </h2>
+            <p>
+              All content on this Site, including but not limited to text,
+              images, logos, and designs, is the property of Truly Painting LLC
+              or its licensors and is protected by copyright and other
+              intellectual property laws. You may not reproduce, modify,
+              distribute, or otherwise use any content from this Site without
+              our prior written consent.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">4. User Conduct</h2>
+            <p>
+              You agree to use this Site only for lawful purposes and in a
+              manner that does not infringe the rights of others or restrict or
+              inhibit their use and enjoyment of the Site. You are prohibited
+              from:
+            </p>
+            <ul class="list-disc pl-6 mb-6">
+              <li>
+                Transmitting any unlawful, harmful, threatening, abusive,
+                harassing, defamatory, vulgar, obscene, or otherwise
+                objectionable content.
+              </li>
+              <li>
+                Impersonating any person or entity or falsely stating or
+                misrepresenting your affiliation with a person or entity.
+              </li>
+              <li>
+                Attempting to interfere with the proper working of the Site.
+              </li>
+              <li>
+                Collecting or harvesting any personally identifiable information
+                from the Site without our consent.
+              </li>
+            </ul>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">
+              5. Links to Other Websites
+            </h2>
+            <p>
+              Our Site may contain links to third-party websites. These links
+              are provided for your convenience only, and we do not endorse or
+              assume any responsibility for the content or practices of these
+              websites. Your use of third-party websites is at your own risk and
+              subject to their terms and privacy policies.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">
+              6. Disclaimer of Warranties
+            </h2>
+            <p>
+              This Site and its content are provided on an "as is" and "as
+              available" basis without any warranties of any kind, express or
+              implied, including but not limited to warranties of
+              merchantability, fitness for a particular purpose, and
+              non-infringement. We do not warrant that the Site will be
+              uninterrupted or error-free, that defects will be corrected, or
+              that the Site or the servers that make it available are free of
+              viruses or other harmful components.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">
+              7. Limitation of Liability
+            </h2>
+            <p>
+              To the fullest extent permitted by applicable law, Truly Painting
+              LLC shall not be liable for any direct, indirect, incidental,
+              special, consequential, or punitive damages arising out of or in
+              any way connected with your use of this Site or its content, even
+              if we have been advised of the possibility of such damages.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">8. Indemnification</h2>
+            <p>
+              You agree to indemnify, defend, and hold harmless Truly Painting
+              LLC and its officers, directors, employees, agents, and affiliates
+              from and against any and all claims, liabilities, damages, losses,
+              costs, and expenses (including reasonable attorneys' fees) arising
+              out of or in any way connected with your breach of these Terms or
+              your use of the Site.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">9. Governing Law</h2>
+            <p>
+              These Terms shall be governed by and construed in accordance with
+              the laws of the State of Washington, without regard to its
+              conflict of law provisions.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">
+              10. Changes to These Terms
+            </h2>
+            <p>
+              We reserve the right to modify or update these Terms at any time
+              without prior notice. Any changes will be effective immediately
+              upon posting on the Site. Your continued use of the Site after any
+              such changes constitutes your acceptance of the revised Terms.
+            </p>
+
+            <h2 class="text-2xl font-bold mt-8 mb-4">11. Contact Us</h2>
+            <p>
+              If you have any questions about these Terms of Service, please
+              contact us at:
+            </p>
+            <p>
+              Truly Painting LLC<br />
+              trulypaintings@gmail.com
+            </p>
+
+            <p class="mt-8"><strong>Last Updated:</strong> May 12, 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div>
+            <img
+              src="https://storage.googleapis.com/msgsndr/7mewc5RIQe9kefPF1P31/media/67aee2ab2ba94e912ea18552.png"
+              alt="Truly Painting Logo"
+              class="h-14 mb-4"
+            />
+            <p class="text-gray-300 mb-4">
+              Newport's professional painting services. Quality craftsmanship,
+              innovative solutions, and our exclusive AI preview app.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-primary hover:text-primary/80 transition">
+                <span class="sr-only">Facebook</span>
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="text-primary hover:text-primary/80 transition">
+                <span class="sr-only">Instagram</span>
+                <svg
+                  class="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+            <ul class="space-y-3">
+              <li class="flex items-center">
+                <svg
+                  class="w-[18px] h-[18px] mr-3 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <a href="tel:5094617090" class="hover:text-primary transition"
+                  >(509) 461-7090</a
+                >
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="w-[18px] h-[18px] mr-3 text-primary"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <a
+                  href="mailto:trulypaintings@gmail.com"
+                  class="hover:text-primary transition"
+                  >trulypaintings@gmail.com</a
+                >
+              </li>
+              <li class="flex items-start">
+                <svg
+                  class="w-[18px] h-[18px] mr-3 text-primary mt-1"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>141 Elu Beach Rd, Newport, WA 99156</span>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Hours & Information</h3>
+            <ul class="space-y-2 text-gray-300">
+              <li>Open 7:30am-7:00pm Daily</li>
+              <li>Serving Newport & Surrounding Areas</li>
+              <li>Fully Insured and Bonded</li>
+              <li>Painting Specialists</li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-700 pt-8 mt-8 text-gray-300 text-sm text-center"
+        >
+          <p>
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Truly Painting. All rights reserved.
+          </p>
+          <p class="mt-2">
+            <a href="privacy.html" class="hover:text-primary transition"
+              >Privacy Policy</a
+            >
+            |
+            <a href="terms.html" class="hover:text-primary transition"
+              >Terms of Service</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NBKXB3TF"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script>
+      // Mobile menu toggle
+      window.toggleMobileMenu = function () {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.toggle("hidden");
+      };
+
+      window.closeMobileMenu = function () {
+        const mobileMenu = document.getElementById("mobileMenu");
+        mobileMenu.classList.add("hidden");
+      };
+    </script>
+  </body>
+</html>
