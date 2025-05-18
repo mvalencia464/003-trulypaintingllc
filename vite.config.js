@@ -10,6 +10,7 @@ export default defineConfig({
         services: resolve(__dirname, 'services.html'),
         team: resolve(__dirname, 'team.html'),
         visualizer: resolve(__dirname, 'visualizer.html'),
+        thankYou: resolve(__dirname, 'thank-you.html'),
       },
     },
   },
