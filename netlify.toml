@@ -3,6 +3,20 @@
   command = "npm run build"
 
 # Redirect and rewrite rules
+# Redirect www to non-www
+[[redirects]]
+  from = "https://www.trulypaintingllc.com/*"
+  to = "https://trulypaintingllc.com/:splat"
+  status = 301
+  force = true
+
+# Handle thank-you page specifically
+[[redirects]]
+  from = "/thank-you"
+  to = "/thank-you.html"
+  status = 200
+
+# SPA fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"
