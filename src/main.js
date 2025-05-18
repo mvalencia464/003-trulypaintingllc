@@ -263,33 +263,15 @@ function initializeProjects() {
       </div>
     </div>
     <div class="p-6">
-      <div class="flex items-center justify-between mb-3">
+      <div class="mb-3">
         <span class="text-sm font-medium text-primary">${
           project.type
         }</span>
-        <div class="flex">
-          ${Array(project.testimonial.rating)
-            .fill()
-            .map(
-              () => `
-            <svg class="w-4 h-4 text-primary fill-current" viewBox="0 0 24 24">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-            </svg>
-          `
-            )
-            .join("")}
-        </div>
       </div>
       <h3 class="text-xl font-bold text-gray-900 mb-2">${
         project.title
       }</h3>
-      <p class="text-gray-600 mb-4">${project.description}</p>
-      <blockquote class="italic text-sm text-gray-500 border-l-4 border-primary pl-4">
-        "${project.testimonial.text}"
-        <footer class="mt-2 font-medium text-gray-700">
-          - ${project.testimonial.author}
-        </footer>
-      </blockquote>
+      <p class="text-gray-600">${project.description}</p>
     </div>
   `;
 
